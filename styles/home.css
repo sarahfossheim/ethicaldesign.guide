@@ -79,6 +79,21 @@ main .resources .resource ul {
     list-style-type: none;
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
+    column-gap: 1rem;
+}
+
+main .resources .resource ul li {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+main .resources .resource ul li:last-child {
+    text-align: right;
+}
+
+main .resources .resource ul li a {
+    color: var(--text-normal);
 }
 
 @media screen and (max-width: 900px) {
