@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: "Archivo", sans-serif;
+    background-color: var(--background);
+    color: var(--text-normal);
+}
+
+header {
+    display: block;
+    width: 60rem;
+    max-width: 99vw;
+    margin: 3rem auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header h1 {
+    font-family: "Casta-ExtraBoldExpanded", sans-serif;
+    font-size: 2.75rem;
+    text-align: center;
+    color: var(--text-highlighted);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header nav ul li {
+    display: block;
+    list-style-type: none;
+    position: absolute;
+    width: 6rem;
+}
+
+header nav ul li a {
+    color: var(--text-highlighted);
+    text-decoration: none;
+}
+
+header nav ul li.resources, header nav ul li.about {
+    top: 0.75rem;
+}
+
+header nav ul li.resources a, header nav ul li.about a {
+    border-bottom: 2px solid var(--text-highlighted);
+}
+
+header nav ul li.resources {
+    left: 0;
+    text-align: right;
+}
+
+header nav ul li.about {
+    right: 0;
+    text-align: left;
+}
+
+.background .circle-1 {
+    display: block;
+    background-color: #FDFFB0;
+    width: 25rem;
+    height: 20rem;
+    border-radius: 30rem;
+    position: fixed;
+    top: 1rem;
+    left: 20rem;
+    animation: animate-circle-1 40s infinite;
+    filter: blur(5rem);
+}
+
+.background .circle-2 {
+    display: block;
+    background-color: #CDF4FD;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 35rem;
+    filter: blur(5rem);
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: animate-circle-2 40s infinite;
+}
+
+.background .circle-3 {
+    display: block;
+    background-color: #C2E4CF;
+    width: 25rem;
+    height: 20rem;
+    border-radius: 30rem;
+    position: fixed;
+    top: 15rem;
+    left: 15rem;
+    animation: animate-circle-3 40s infinite;
+    filter: blur(5rem);
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    max-width: 90vw;
+    margin: 5rem auto;
+}
+
+@media screen and (max-width: 1080px) {
+    header {
+        max-width: 95vw;
+    }
+    header h1 {
+        position: static;
+        text-align: left;
+        width: 60%;
+        margin-left: 0;
+    }
+    header nav ul {
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+    }
+    header nav ul li {
+        position: static;
+        margin-bottom: 1rem;
+    }
+    header nav ul li.about {
+        text-align: right;
+    }
+}
+
+@keyframes animate-circle-1 {
+    0% {
+        top: 1rem;
+        left: 20rem;
+    }
+    33% {
+        top: 70vh;
+        left: 40vw;
+    }
+    66% {
+        top: 10vh;
+        left: 60vw;
+    }
+    100% {
+        top: 1rem;
+        left: 20rem;
+    }
+}
+
+@keyframes animate-circle-2 {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    33% {
+        top: 70vh;
+        left: 50vw;
+    }
+    66% {
+        top: -20vh;
+        left: 70vw;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes animate-circle-3 {
+    0% {
+        top: 15rem;
+        left: 15rem;
+    }
+    33% {
+        top: 50vh;
+        left: 60vw;
+    }
+    66% {
+        top: -10vh;
+        left: 50vw;
+    }
+    100% {
+        top: 15rem;
+        left: 15rem;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .background .circle-1, .background .circle-2, .background .circle-3 {
+        animation: none;
+    }
+}
+  

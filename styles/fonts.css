@@ -1,0 +1,7 @@
+@import url("//hello.myfonts.net/count/3be966");
+  
+@font-face {
+  font-family: 'Casta-ExtraBoldExpanded';
+  src: url('fonts/Casta-ExtraBoldExpanded/font.woff2') format('woff2'), url('fonts/Casta-ExtraBoldExpanded/font.woff') format('woff');
+}
+

@@ -1,0 +1,12 @@
+## TODO
+- List
+- Responsiveness
+- About page
+- Footer
+- Contribute page
+- Newsletter
+- Pagination
+- Filters
+- Sorting
+- Dark mode
+- Search

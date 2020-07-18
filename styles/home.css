@@ -1,0 +1,41 @@
+main {
+    margin-top: 10rem;
+}
+
+main .intro {
+    width: 45rem;
+    max-width: 95vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.overview-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+}
+
+.overview-wrapper .filters {
+    color: var(--text-normal-light);
+}
+
+.overview-wrapper .filters ul {
+    margin-top: 0.5rem;
+}
+
+.overview-wrapper .filters ul li {
+    list-style-type: none;
+    padding-left: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.overview-wrapper .filters ul li:before {
+    content: "→";
+    position: relative;
+    left: -0.5rem;
+}
+
+.overview-wrapper .filters ul li a {
+    color: var(--text-normal-light);
+    text-decoration: none;
+}

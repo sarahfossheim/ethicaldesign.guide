@@ -1,0 +1,17 @@
+{
+  "name": "ethicaldesignguide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  },
+  "dependencies": {
+    "eleventy-plugin-seo": "^0.4.3",
+    "eleventy-xml-plugin": "^0.1.0"
+  }
+}

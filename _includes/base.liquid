@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% seo %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="monetization" content="$ilp.uphold.com/ExLzDY3YKFpY">
+        <link rel='icon' href='/favicon.ico' type='image/x-icon'/>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/styles/fonts.css">
+        <link rel="stylesheet" href="/styles/variables.css">
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/home.css">
+
+        <!-- {% capture css %}
+            {% include ../styles/fonts.css %}
+            {% include ../styles/variables.css %}
+            {% include ../styles/main.css %}
+        {% endcapture %}
+        <style>
+            {{css | safe}}
+        </style> -->
+    </head>
+
+    <body>
+        <div class="background" aria-hidden="true">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+        </div>
+
+        <header>
+            <h1>Ethical Design Guide</h1>
+            <nav>
+                <ul>
+                    <li class="resources"><a href="/">Resources</a></li>
+                    <li class="about"><a href="/about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+
+        <main>
+            {{content}}
+        </main>
+    </body>
+</html>
