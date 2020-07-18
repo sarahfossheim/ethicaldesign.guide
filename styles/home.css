@@ -43,6 +43,42 @@ main .filter-wrapper .filters {
 
 main .filter-wrapper .filters li a {
     color: var(--text-normal);
+    text-decoration: none;
+}
+
+main .filter-wrapper .filters li {
+    position: relative;
+}
+
+main .filter-wrapper .filters li a:hover {
+    border-radius: 50%;
+    border: 1px solid var(--text-normal);
+    padding: 0.25rem 0.5rem;
+    position: absolute;
+    left: -0.5rem;
+    left: calc(-0.5rem - 1px);
+    top: -0.25rem;
+    top: calc(-0.25rem - 1px);
+}
+
+main .resources {
+    margin-top: 2rem;
+}
+
+main .resources .resource {
+    border-top: 2px solid var(--text-normal);
+    list-style-type: none;
+    padding: 1.5rem 0;
+}
+
+main .resources .resource:last-child {
+    border-bottom: 2px solid var(--text-normal);
+}
+
+main .resources .resource ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
 }
 
 @media screen and (max-width: 900px) {

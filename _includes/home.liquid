@@ -17,37 +17,24 @@ layout: base.liquid
     </ul>
 </section>
 
-<!-- <section class="overview-wrapper">
-    <section class="filters">
-        Look for
-        <ul>
-            <li><a href="">Books</a></li>
-            <li><a href="">Articles</a></li>
-            <li><a href="">Courses</a></li>
-            <li><a href="">Tools</a></li>
-            <li><a href="">All resources</a></li>
-        </ul>
-    </section>
-    <section class="overview">
-        Content
-    </section>
-</div> -->
-
-<!-- 
+<ul class="resources">
     {% for resource in collections.resources %}
-        <ul>
-            <li>{{resource.data.title}}</li>
-            <li>
-                {% for author in resource.data.authors %}
-                    <span>{{author}}</span>
-                {% endfor %}
-            </li>
-            <li>
-                {% for category in resource.data.categories %}
-                    <span>{{category}}</span>
-                {% endfor %}
-            </li>
-            <li>{{resource.data.type}}</li>
-            <li><a href="{{resource.data.link}}">🔗</a></li>
-        </ul>
-    {% endfor %} -->
+        <li class="resource">
+            <ul>
+                <li><a href="{{resource.data.link}}">{{resource.data.title}}</a></li>
+                <li>
+                    by
+                    {% for author in resource.data.authors %}
+                        <span>{{author}}</span>
+                    {% endfor %}
+                </li>
+                <!-- <li>
+                    {% for category in resource.data.categories %}
+                        <span>{{category}}</span>
+                    {% endfor %}
+                </li> -->
+                <li>{{resource.data.type}}</li>
+            </ul>
+        </li>
+    {% endfor %}
+</ul>
