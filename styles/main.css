@@ -16,52 +16,60 @@ body {
 
 header {
     display: block;
-    width: 60rem;
-    max-width: 99vw;
-    margin: 3rem auto;
+    width: 100%;
     position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
+    z-index: 1;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid var(--text-normal);
+
 }
 
-header h1 {
-    font-family: "Casta-ExtraBoldExpanded", sans-serif;
-    font-size: 2.75rem;
-    text-align: center;
-    color: var(--text-highlighted);
+nav {
+    width: 50rem;
+    max-width: 95vw;
     margin-left: auto;
     margin-right: auto;
 }
 
-header nav ul li {
-    display: block;
-    list-style-type: none;
-    position: absolute;
-    width: 6rem;
+nav ul {
+    text-transform: uppercase;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    text-align: center;
 }
 
-header nav ul li a {
-    color: var(--text-highlighted);
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 2.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+nav ul li:last-child {
+    margin-right: 0rem;
+}
+
+nav ul li a {
+    color: var(--text-normal);
     text-decoration: none;
 }
 
-header nav ul li.resources, header nav ul li.about {
-    top: 0.75rem;
+nav ul li a:hover {
+    background-image: linear-gradient(5deg, transparent 33%, var(--accent-1) 33% 66%, transparent 66%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-header nav ul li.resources a, header nav ul li.about a {
-    border-bottom: 2px solid var(--text-highlighted);
+nav ul li:nth-child(2n) a:hover {
+    background-image: linear-gradient(-5deg, transparent 33%, var(--accent-1) 33% 66%, transparent 66%);
 }
 
-header nav ul li.resources {
-    left: 0;
-    text-align: right;
-}
-
-header nav ul li.about {
-    right: 0;
-    text-align: left;
+main {
+    width: 49rem;
+    max-width: 95vw;
+    margin: 4rem auto;
+    position: relative;
+    z-index: 1;
 }
 
 .background .circle-1 {
@@ -103,36 +111,6 @@ header nav ul li.about {
     filter: blur(5rem);
 }
 
-main {
-    position: relative;
-    z-index: 1;
-    max-width: 90vw;
-    margin: 5rem auto;
-}
-
-@media screen and (max-width: 1080px) {
-    header {
-        max-width: 95vw;
-    }
-    header h1 {
-        position: static;
-        text-align: left;
-        width: 60%;
-        margin-left: 0;
-    }
-    header nav ul {
-        position: absolute;
-        right: 0;
-        top: 0.5rem;
-    }
-    header nav ul li {
-        position: static;
-        margin-bottom: 1rem;
-    }
-    header nav ul li.about {
-        text-align: right;
-    }
-}
 
 @keyframes animate-circle-1 {
     0% {
@@ -191,9 +169,37 @@ main {
     }
 }
 
+@media screen and (max-width: 1040px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 0.5rem;
+    }
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    nav ul li {
+        text-align: left;
+    }
+}
+
 @media (prefers-reduced-motion) {
     .background .circle-1, .background .circle-2, .background .circle-3 {
         animation: none;
     }
 }
-  
