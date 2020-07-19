@@ -1,0 +1,41 @@
+footer {
+    background-color: #F45D01;
+    color: var(--text-normal);
+    border-top: 2px solid var(--text-normal);
+    position: relative;
+    z-index: 1;
+}
+
+footer .info {
+    display: grid;
+    grid-template-columns: 1fr 0.35fr;
+    width: 49rem;
+    max-width: 95vw;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+footer .info .links {
+    text-align: left;
+}
+
+footer .info .logo {
+    text-align: right;
+}
+
+footer .info .logo h2 {
+    font-family: "Casta-ExtraBoldExpanded", serif;
+    font-weight: normal;
+    font-size: 1.75rem;
+}
+
+footer .credits {
+    text-align: center;
+    background-color: #EEB902;
+    padding: 1rem 0;
+    border-top: 2px solid var(--text-normal);
+}
+
+footer .credits a {
+    color: var(--text-normal);
+}

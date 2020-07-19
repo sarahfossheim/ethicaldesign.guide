@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="/styles/variables.css">
         <link rel="stylesheet" href="/styles/main.css">
         <link rel="stylesheet" href="/styles/home.css">
+        <link rel="stylesheet" href="/styles/footer.css">
 
         <!-- {% capture css %}
             {% include ../styles/fonts.css %}
@@ -23,30 +24,18 @@
     </head>
 
     <body>
-        <!-- <div class="background" aria-hidden="true">
+        <div class="background" aria-hidden="true">
             <div class="circle-1"></div>
             <div class="circle-2"></div>
             <div class="circle-3"></div>
-        </div> -->
+        </div>
 
-        <header>
-            <nav>
-                <ul>
-                    <li class="resources"><a href="/">Resources</a></li>
-                    <li class="about"><a href="/about">About</a></li>
-                    <li class="about"><a href="/">Submit</a></li>
-                    <li class="about"><a href="/">Documentation</a></li>
-                    <li class="about"><a href="/">Support</a></li>
-                    <li class="about"><a href="https://blacklivesmatters.carrd.co/">#BlackLivesMatter</a></li>
-                </ul>
-            </nav>
-        </header>
-
+        {% include components/header.liquid %}
+        
         <main>
             {{content}}
         </main>
 
-        <footer>
-        </footer>
+        {% include components/footer.liquid %}
     </body>
 </html>
