@@ -1,5 +1,4 @@
 footer {
-    background-color: #F45D01;
     color: var(--text-normal);
     border-top: 2px solid var(--text-normal);
     position: relative;
@@ -31,7 +30,6 @@ footer .info .logo h2 {
 
 footer .credits {
     text-align: center;
-    background-color: #EEB902;
     padding: 1rem 0;
     border-top: 2px solid var(--text-normal);
 }
