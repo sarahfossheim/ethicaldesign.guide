@@ -24,20 +24,20 @@ header {
 
 }
 
-nav {
+header nav {
     width: 50rem;
     max-width: 95vw;
     margin-left: auto;
     margin-right: auto;
 }
 
-nav ul {
+header nav ul {
     text-transform: uppercase;
     font-family: "Archivo Black", "Archivo", sans-serif;
     text-align: center;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
     list-style-type: none;
     margin-right: 2.5rem;
@@ -45,22 +45,22 @@ nav ul li {
     text-align: center;
 }
 
-nav ul li:last-child {
+header nav ul li:last-child {
     margin-right: 0rem;
 }
 
-nav ul li a {
+header nav ul li a {
     color: var(--text-normal);
     text-decoration: none;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     background-image: linear-gradient(5deg, transparent 33%, var(--accent-1) 33% 66%, transparent 66%);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-nav ul li:nth-child(2n) a:hover {
+header nav ul li:nth-child(2n) a:hover {
     background-image: linear-gradient(-5deg, transparent 33%, var(--accent-1) 33% 66%, transparent 66%);
 }
 
@@ -170,30 +170,30 @@ main {
 }
 
 @media screen and (max-width: 1040px) {
-    nav ul {
+    header nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         column-gap: 0.5rem;
     }
-    nav ul li {
+    header nav ul li {
         display: block;
         margin: 0;
     }
 }
 
 @media screen and (max-width: 900px) {
-    nav ul {
+    header nav ul {
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 0.5rem;
     }
 }
 
 @media screen and (max-width: 600px) {
-    nav ul {
+    header nav ul {
         grid-template-columns: 1fr 1fr;
     }
     
-    nav ul li {
+    header nav ul li {
         text-align: left;
     }
 }

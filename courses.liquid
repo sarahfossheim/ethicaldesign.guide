@@ -1,0 +1,9 @@
+---
+layout: home.liquid
+pagination:
+  data: collections.courses
+  size: 3
+---
+
+{% include components/filters.liquid, active: "courses" %}
+{% include components/resources.liquid, pagination: pagination %}

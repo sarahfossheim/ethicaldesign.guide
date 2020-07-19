@@ -1,0 +1,10 @@
+---
+layout: home.liquid
+pageTitle: "Ethical Design Guide"
+pagination:
+  data: collections.resources
+  size: 3
+---
+
+{% include components/filters.liquid, active: "all" %}
+{% include components/resources.liquid, pagination: pagination %}

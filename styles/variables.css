@@ -4,4 +4,14 @@
     --text-normal: #242423;
     --text-normal-light: #000;
     --accent-1: #dbee2e;
+    --accent-transparent: rgba(219, 238, 46, 0.25);
 }
+
+/* :root {
+    --background: #B4E33D;
+    --text-highlighted: #000;
+    --text-normal: #242423;
+    --text-normal-light: #000;
+    --accent-1: #dbee2e;
+    --accent-transparent: rgba(219, 238, 46, 0.25);
+} */

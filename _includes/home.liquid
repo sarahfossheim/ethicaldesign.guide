@@ -3,38 +3,17 @@ layout: base.liquid
 ---
 
 <section class="intro">
-    <h1>{{pageTitle}}</h1>
-    <div>{{content}}</div>
+    <h1>Ethical Design Guide</h1>
+    <div>
+        <p>
+            Ethical Design Guide is a directory of resources to guide designers, 
+            engineers, project managers, copywriters, and others in tech in 
+            creating more ethical, fair and inclusive services and products. 
+            Tech is political and can seriously harm people from minoritized groups. 
+            Our product should not cause harm. 
+            The directory will be continiously updated. 
+        </p>
+    </div>
 </section>
 
-<section class="filter-wrapper">
-    <ul class="filters">
-        <li><a href="">Books</a></li>
-        <li><a href="">Articles</a></li>
-        <li><a href="">Courses</a></li>
-        <li><a href="">Tools</a></li>
-        <li><a href="">All resources</a></li>
-    </ul>
-</section>
-
-<ul class="resources">
-    {% for resource in collections.resources %}
-        <li class="resource">
-            <ul>
-                <li><a href="{{resource.data.link}}">{{resource.data.title}}</a></li>
-                <li>
-                    by
-                    {% for author in resource.data.authors %}
-                        <span>{{author}}</span>
-                    {% endfor %}
-                </li>
-                <!-- <li>
-                    {% for category in resource.data.categories %}
-                        <span>{{category}}</span>
-                    {% endfor %}
-                </li> -->
-                <li>{{resource.data.type}}</li>
-            </ul>
-        </li>
-    {% endfor %}
-</ul>
+{{content}}

@@ -30,6 +30,7 @@ main .filter-wrapper {
     display: grid;
     grid-template-columns: 8rem 1fr;
     column-gap: 6.5rem;
+    margin-top: 5rem;
 }
 
 main .filter-wrapper .filters {
@@ -38,19 +39,19 @@ main .filter-wrapper .filters {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 0.5rem;
-    margin-top: 3rem;
 }
 
-main .filter-wrapper .filters li a {
+main .filter-wrapper .filters li a, main .filter-wrapper .filters li.active a {
     color: var(--text-normal);
     text-decoration: none;
+    transition: transform 0.35s;
 }
 
 main .filter-wrapper .filters li {
     position: relative;
 }
 
-main .filter-wrapper .filters li a:hover {
+main .filter-wrapper .filters li a:hover, main .filter-wrapper .filters li.active a {
     border-radius: 50%;
     border: 1px solid var(--text-normal);
     padding: 0.25rem 0.5rem;
@@ -61,6 +62,15 @@ main .filter-wrapper .filters li a:hover {
     top: calc(-0.25rem - 1px);
 }
 
+main .filter-wrapper .filters li.active a {
+    transform: rotate(3deg);
+}
+
+main .filter-wrapper .filters li a:hover {
+    transform: rotate(-3deg);
+}
+
+
 main .resources {
     margin-top: 2rem;
 }
@@ -68,7 +78,8 @@ main .resources {
 main .resources .resource {
     border-top: 2px solid var(--text-normal);
     list-style-type: none;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0.25rem;
+    position: relative;
 }
 
 main .resources .resource:last-child {
@@ -78,8 +89,8 @@ main .resources .resource:last-child {
 main .resources .resource ul {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    column-gap: 1rem;
+    grid-template-columns: 1fr 0.75fr 0.25fr;
+    column-gap: 1.5rem;
 }
 
 main .resources .resource ul li {
@@ -94,6 +105,40 @@ main .resources .resource ul li:last-child {
 
 main .resources .resource ul li a {
     color: var(--text-normal);
+}
+
+main .resources .resource ul li a:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main .table-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+}
+
+main .table-navigation p a {
+    color: var(--text-normal);
+    font-family: "Casta-ExtraBoldExpanded", "Archivo Black", "Archivo", sans-serif;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+main .table-navigation .next {
+    grid-column: 1;
+    text-align: right;
+}
+
+main .table-navigation .next {
+    grid-column: 2;
+    text-align: right;
 }
 
 @media screen and (max-width: 900px) {
@@ -111,6 +156,13 @@ main .resources .resource ul li a {
     main .filter-wrapper .filters {
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 1rem;
+    }
+
+    main .resources .resource ul {
+        grid-template-columns: 1fr;
+    }
+    
+    main .resources .resource ul li:last-child {
         text-align: left;
     }
 }

@@ -1,0 +1,26 @@
+<ul class="resources">
+    {% for resource in pagination.items %}
+        <li class="resource">
+            <ul>
+                <li><a href="{{resource.data.link}}">{{resource.data.title}}</a></li>
+                <li>
+                    by
+                    {% for author in resource.data.authors %}
+                        <span>{{author}}</span>
+                    {% endfor %}
+                </li>
+                <li>{{resource.data.type}}</li>
+            </ul>
+        </li>
+    {% endfor %}
+</ul>
+
+<nav class="table-navigation">
+    {% if pagination.previousPageHref %}
+        <p class="previous"><a href="{{pagination.previousPageHref}}">← Previous</a></p>
+    {% endif %}
+
+    {% if pagination.nextPageHref %}
+        <p class="next"><a href="{{pagination.nextPageHref}}">Next →</a></p>
+    {% endif %}
+</nav>
