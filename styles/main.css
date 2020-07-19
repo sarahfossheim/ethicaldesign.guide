@@ -21,7 +21,6 @@ header {
     z-index: 1;
     padding: 0.5rem 0;
     border-bottom: 2px solid var(--text-normal);
-
 }
 
 header nav {
@@ -83,6 +82,7 @@ main {
     left: 20rem;
     animation: animate-circle-1 40s infinite;
     filter: blur(5rem);
+    z-index: -1;
 }
 
 .background .circle-2 {
@@ -96,6 +96,7 @@ main {
     top: 0;
     left: 0;
     animation: animate-circle-2 40s infinite;
+    z-index: -1;
 }
 
 .background .circle-3 {
@@ -109,6 +110,7 @@ main {
     left: 15rem;
     animation: animate-circle-3 40s infinite;
     filter: blur(5rem);
+    z-index: -1;
 }
 
 

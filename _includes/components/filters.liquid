@@ -1,10 +1,10 @@
 <section class="filter-wrapper">
-    <p>Filter by {{active}}</p>
+    <p>Filter</p>
     <ul class="filters">
-        <li {% if active contains 'books' %}class="active"{% endif %}><a href="/books">Books</a></li>
-        <li {% if active contains 'articles' %}class="active"{% endif %}><a href="/articles">Articles</a></li>
-        <li {% if active contains 'courses' %}class="active"{% endif %}><a href="/courses">Courses</a></li>
-        <li {% if active contains 'tools' %}class="active"{% endif %}><a href="/tools">Tools</a></li>
+        <li {% if active contains 'books' %}class="active"{% endif %}><a href="/resources/books">Books</a></li>
+        <li {% if active contains 'articles' %}class="active"{% endif %}><a href="/resources/articles">Articles</a></li>
+        <li {% if active contains 'courses' %}class="active"{% endif %}><a href="/resources/courses">Courses</a></li>
+        <li {% if active contains 'tools' %}class="active"{% endif %}><a href="/resources/tools">Tools</a></li>
         <li {% if active contains 'all' %}class="active"{% endif %}><a href="/">All resources</a></li>
     </ul>
 </section>
