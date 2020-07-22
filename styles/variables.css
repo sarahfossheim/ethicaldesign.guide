@@ -1,15 +1,14 @@
 :root {
-    --background: #FFF;
-    --text-highlighted: #000;
-    --text-normal: #242423;
-    --text-normal-light: #000;
+    --background: #fef7f9;
+    --text-highlighted: #121042;
+    --text-normal: #121042;
+    --text-normal-light: #121042;
     --accent-1: #dbee2e;
     --accent-transparent: rgba(219, 238, 46, 0.25);
 
-    --about-background: red;
-    --submit-background: yellow;
-    --documentation-background: pink;
-    --support-background: teal;
+    --circle-1: #f092ca;
+    --circle-2: #efc5c0;
+    --circle-3: #9b7ded;
 }
 
 /* :root {

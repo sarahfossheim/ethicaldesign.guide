@@ -101,6 +101,17 @@ main .resources .resource ul li {
 
 main .resources .resource ul li:last-child {
     text-align: right;
+    overflow: visible;
+}
+
+main .resources .resource ul li:last-child span {
+    background-color: #fee3f2;
+    color: #1a13af;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    letter-spacing: 0.5px;
+    padding: 0.3rem 0.5rem 0.25rem 0.5rem;
+    border-radius: 1rem;
 }
 
 main .resources .resource ul li a {
@@ -139,6 +150,18 @@ main .table-navigation .next {
 main .table-navigation .next {
     grid-column: 2;
     text-align: right;
+}
+
+#home {
+    --circle-1: #87ecf3;
+    --circle-2: #e0fe86;
+    --circle-3: #7bf2a6;
+}
+
+#submit {
+    --circle-1: #a5bef1;
+    --circle-2: #a8f1f9;
+    --circle-3: #96b5e0;
 }
 
 @media screen and (max-width: 900px) {

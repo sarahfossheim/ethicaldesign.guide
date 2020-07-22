@@ -69,25 +69,25 @@ main {
     margin: 4rem auto;
     position: relative;
     z-index: 1;
+    min-height: 100vh;
+    min-height: calc(100vh - 20rem);
 }
 
 .background .circle-1 {
     display: block;
-    background-color: #FDFFB0;
     width: 25rem;
     height: 20rem;
     border-radius: 30rem;
     position: fixed;
     top: 1rem;
     left: 20rem;
-    animation: animate-circle-1 40s infinite;
+    animation: animate-circle-1 90s infinite;
     filter: blur(5rem);
     z-index: -1;
 }
 
 .background .circle-2 {
     display: block;
-    background-color: #CDF4FD;
     width: 35rem;
     height: 35rem;
     border-radius: 35rem;
@@ -95,24 +95,34 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    animation: animate-circle-2 40s infinite;
+    animation: animate-circle-2 90s infinite;
     z-index: -1;
 }
 
 .background .circle-3 {
     display: block;
-    background-color: #C2E4CF;
     width: 25rem;
     height: 20rem;
     border-radius: 30rem;
     position: fixed;
     top: 15rem;
     left: 15rem;
-    animation: animate-circle-3 40s infinite;
+    animation: animate-circle-3 90s infinite;
     filter: blur(5rem);
     z-index: -1;
 }
 
+.background .circle-1 {
+    background-color: var(--circle-1);
+}
+
+.background .circle-2 {
+    background-color: var(--circle-2);
+}
+
+.background .circle-3 {
+    background-color: var(--circle-3);
+}
 
 @keyframes animate-circle-1 {
     0% {

@@ -1,0 +1,64 @@
+#about section {
+    margin-bottom: 5rem;
+}
+
+#about .large-block {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+#about .block-column-2 {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    column-gap: 6.5rem;
+    line-height: 1.5rem;
+}
+
+#about .block-column-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 6.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+#about .block-column-2 h2 {
+    font-family: "Casta-ExtraBoldExpanded";
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
+
+#about .cta {
+    border: none;
+    font-size: 1.25rem;
+}
+
+#about .cta p {
+    border: 2px solid var(--text-normal);
+    border-radius: 50%;
+    padding: 1rem 1rem;
+}
+
+#about .cta p a {
+    color: var(--text-normal);
+    text-decoration: none;
+}
+
+#about .cta p a:before {
+    content: "→";
+    position: relative;
+    left: -0.5rem;
+}
+
+#about .background .circle-1 {
+    --circle-1: #f092ca;
+}
+
+#about .background .circle-2 {
+    --circle-2: #efc5c0;
+}
+
+#about .background .circle-3 {
+    --circle-3: #9b7ded;
+}
