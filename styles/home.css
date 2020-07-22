@@ -105,8 +105,8 @@ main .resources .resource ul li:last-child {
 }
 
 main .resources .resource ul li:last-child span {
-    background-color: #fee3f2;
-    color: #1a13af;
+    background-color: rgba(222,241,215,0.35);
+    /* color: #4322e9; */
     text-transform: uppercase;
     font-size: 0.65rem;
     letter-spacing: 0.5px;
@@ -156,12 +156,24 @@ main .table-navigation .next {
     --circle-1: #87ecf3;
     --circle-2: #e0fe86;
     --circle-3: #7bf2a6;
+
+    --selection-bg: #39fd7e;
+    --selection-text: #1e1356;
+
 }
 
 #submit {
     --circle-1: #a5bef1;
     --circle-2: #a8f1f9;
     --circle-3: #96b5e0;
+
+    --selection-bg: #6908fb;
+    --selection-text: #e9e0e7;
+}
+
+#about {
+    --selection-bg: #cc05fd;
+    --selection-text: #13175d;
 }
 
 @media screen and (max-width: 900px) {

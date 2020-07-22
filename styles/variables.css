@@ -9,6 +9,9 @@
     --circle-1: #f092ca;
     --circle-2: #efc5c0;
     --circle-3: #9b7ded;
+
+    --selection-bg: #cc05fd;
+    --selection-text: #13175d;
 }
 
 /* :root {
