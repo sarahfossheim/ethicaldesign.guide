@@ -1,0 +1,73 @@
+
+
+/* body {
+    background-attachment: fixed;
+
+    background-image: radial-gradient(rgba(254,221,250,0.25), rgba(233,228,255,0.25), transparent 50%),
+        radial-gradient(rgba(243,214,199,0.3), transparent 60%),
+        radial-gradient(#DFE3DE, transparent 60%);
+
+    background-size: 60vh 60vh,
+        calc(50vw + 60vh) calc(50vw + 60vh),
+        calc(50vw + 60vh) calc(50vw + 60vh);
+
+    background-position: center -75vh,
+        top left,
+        bottom right;
+
+    background-repeat: repeat,
+        repeat,
+        repeat;
+} */
+
+/* 
+.background .circle-1 {
+    display: block;
+    width: 25rem;
+    height: 20rem;
+    border-radius: 30rem;
+    position: fixed;
+    top: 1rem;
+    left: 20rem;
+    animation: animate-circle-1 240s infinite;
+    filter: blur(5rem);
+    z-index: -1;
+}
+
+.background .circle-2 {
+    display: block;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 35rem;
+    filter: blur(5rem);
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: animate-circle-2 240s infinite;
+    z-index: -1;
+}
+
+.background .circle-3 {
+    display: block;
+    width: 25rem;
+    height: 20rem;
+    border-radius: 30rem;
+    position: fixed;
+    top: 15rem;
+    left: 15rem;
+    animation: animate-circle-3 240s infinite;
+    filter: blur(5rem);
+    z-index: -1;
+}
+
+.background .circle-1 {
+    background-color: #f7e9d6;
+}
+
+.background .circle-2 {
+    background-color: #fde7f4;
+}
+
+.background .circle-3 {
+    background-color: #f1d7f6;
+} */

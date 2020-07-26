@@ -153,9 +153,11 @@ main .table-navigation .next {
 }
 
 #home {
-    --circle-1: #87ecf3;
-    --circle-2: #e0fe86;
-    --circle-3: #7bf2a6;
+
+
+    --circle-1: #fadde1;
+    --circle-2: #ffc4d6;
+    --circle-3: #ff97b7;
 
     --selection-bg: #39fd7e;
     --selection-text: #1e1356;
@@ -163,9 +165,13 @@ main .table-navigation .next {
 }
 
 #submit {
-    --circle-1: #a5bef1;
-    --circle-2: #a8f1f9;
-    --circle-3: #96b5e0;
+    /* --circle-1: #87ecf3;
+    --circle-2: #e0fe86;
+    --circle-3: #7bf2a6; */
+
+    --circle-1: #46c9fd;
+    --circle-2: #0bf9aa;
+    --circle-3: #a3fe1b;
 
     --selection-bg: #6908fb;
     --selection-text: #e9e0e7;
@@ -174,6 +180,12 @@ main .table-navigation .next {
 #about {
     --selection-bg: #cc05fd;
     --selection-text: #13175d;
+}
+
+#support {
+    --circle-1: #cf6148;
+    --circle-2: #fdc54e;
+    --circle-3: #fd863b;
 }
 
 @media screen and (max-width: 900px) {

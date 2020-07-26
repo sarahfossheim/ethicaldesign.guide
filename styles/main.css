@@ -86,7 +86,7 @@ main {
     position: fixed;
     top: 1rem;
     left: 20rem;
-    animation: animate-circle-1 90s infinite;
+    animation: animate-circle-1 240s infinite;
     filter: blur(5rem);
     z-index: -1;
 }
@@ -100,7 +100,7 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    animation: animate-circle-2 90s infinite;
+    animation: animate-circle-2 240s infinite;
     z-index: -1;
 }
 
@@ -112,7 +112,7 @@ main {
     position: fixed;
     top: 15rem;
     left: 15rem;
-    animation: animate-circle-3 90s infinite;
+    animation: animate-circle-3 240s infinite;
     filter: blur(5rem);
     z-index: -1;
 }
