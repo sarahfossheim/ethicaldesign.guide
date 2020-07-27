@@ -8,6 +8,7 @@ main .intro {
 main .intro h1 {
     font-size: 1.75rem;
     font-family: "Casta-ExtraBoldExpanded";
+    font-family: "SyneExtra";
     font-weight: normal;
 }
 
@@ -105,8 +106,7 @@ main .resources .resource ul li:last-child {
 }
 
 main .resources .resource ul li:last-child span {
-    background-color: rgba(222,241,215,0.35);
-    /* color: #4322e9; */
+    background-color: var(--seethrough);
     text-transform: uppercase;
     font-size: 0.65rem;
     letter-spacing: 0.5px;
@@ -138,6 +138,7 @@ main .table-navigation {
 main .table-navigation p a {
     color: var(--text-normal);
     font-family: "Casta-ExtraBoldExpanded", "Archivo Black", "Archivo", sans-serif;
+    font-family: "SyneExtra";
     text-decoration: none;
     font-size: 1.25rem;
 }
@@ -152,41 +153,6 @@ main .table-navigation .next {
     text-align: right;
 }
 
-#home {
-
-
-    --circle-1: #fadde1;
-    --circle-2: #ffc4d6;
-    --circle-3: #ff97b7;
-
-    --selection-bg: #39fd7e;
-    --selection-text: #1e1356;
-
-}
-
-#submit {
-    /* --circle-1: #87ecf3;
-    --circle-2: #e0fe86;
-    --circle-3: #7bf2a6; */
-
-    --circle-1: #46c9fd;
-    --circle-2: #0bf9aa;
-    --circle-3: #a3fe1b;
-
-    --selection-bg: #6908fb;
-    --selection-text: #e9e0e7;
-}
-
-#about {
-    --selection-bg: #cc05fd;
-    --selection-text: #13175d;
-}
-
-#support {
-    --circle-1: #cf6148;
-    --circle-2: #fdc54e;
-    --circle-3: #fd863b;
-}
 
 @media screen and (max-width: 900px) {
     main .intro, main .filter-wrapper {

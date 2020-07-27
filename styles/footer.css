@@ -1,8 +1,6 @@
 footer {
     color: var(--text-normal);
-    border-top: 2px solid var(--text-normal);
     position: relative;
-    z-index: 1;
 }
 
 footer .info {
@@ -24,14 +22,16 @@ footer .info .logo {
 
 footer .info .logo h2 {
     font-family: "Casta-ExtraBoldExpanded", serif;
+    font-family: "SyneExtra";
     font-weight: normal;
     font-size: 1.75rem;
 }
 
 footer .credits {
     text-align: center;
-    padding: 1rem 0;
-    border-top: 2px solid var(--text-normal);
+    height: 3rem;
+    padding-top: 1rem;
+    background-color: var(--background);
 }
 
 footer .credits a {

@@ -11,3 +11,24 @@
     url(fonts/syne/Syne-Extra.woff2) format("woff2"),
     url(fonts/syne/Syne-Extra.eot) format("eot");
 }
+
+@font-face {
+  font-family: SyneBold;
+  src: url(fonts/syne/Syne-Bold.woff) format('woff'),
+    url(fonts/syne/Syne-Bold.woff2) format("woff2"),
+    url(fonts/syne/Syne-Bold.eot) format("eot");
+}
+
+@font-face {
+  font-family: SyneBold;
+  src: url(fonts/syne/Syne-Bold.woff) format("woff"),
+    url(fonts/syne/Syne-Bold.woff2) format("woff2"),
+    url(fonts/syne/Syne-Bold.eot) format("eot");
+}
+
+@font-face {
+  font-family: SyneRegular;
+  src: url(fonts/syne/Syne-Regular.woff.woff) format("woff"),
+    url(fonts/syne/Syne-Regular.woff2) format("woff2"),
+    url(fonts/syne/Syne-Regular.eot) format("eot");
+}

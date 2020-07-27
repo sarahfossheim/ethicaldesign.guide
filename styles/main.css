@@ -10,8 +10,15 @@ html {
 
 body {
     font-family: "Archivo", sans-serif;
-    background-color: var(--background);
     color: var(--text-normal);
+    background-color: var(--background);
+    background-image: linear-gradient(var(--background) 15%, var(--contrast), var(--background) 85%),
+    linear-gradient(var(--background) 15%, var(--contrast), var(--background) 85%),
+        linear-gradient(var(--background) 15%, var(--contrast) 85%);
+    background-size: 2.5rem 100vh, 2.5rem 100vh, 100% 100%;
+    background-attachment: fixed, fixed, scroll;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position: 0 0, top right, 0 0;
 }
 
 ::selection {
@@ -19,191 +26,15 @@ body {
     color: var(--selection-text);
 }
 
-header {
-    display: block;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    padding: 0.5rem 0;
-    border-bottom: 2px solid var(--text-normal);
-}
-
-header nav {
-    width: 50rem;
-    max-width: 95vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header nav ul {
-    text-transform: uppercase;
-    font-family: "Archivo Black", "Archivo", sans-serif;
-    text-align: center;
-}
-
-header nav ul li {
-    display: inline;
-    list-style-type: none;
-    margin-right: 2.5rem;
-    font-size: 0.8rem;
-    text-align: center;
-}
-
-header nav ul li:last-child {
-    margin-right: 0rem;
-}
-
-header nav ul li a {
-    color: var(--text-normal);
-    text-decoration: none;
-}
-
-header nav ul li a:hover {
-    background-image: linear-gradient(5deg, transparent 33%, var(--accent-1) 33% 66%, transparent 66%);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-header nav ul li:nth-child(2n) a:hover {
-    background-image: linear-gradient(-5deg, transparent 33%, var(--accent-1) 33% 66%, transparent 66%);
-}
-
 main {
-    width: 49rem;
+    width: 60rem;
     max-width: 95vw;
-    margin: 4rem auto;
+    margin: 7rem auto 5rem auto;
     position: relative;
-    z-index: 1;
     min-height: 100vh;
     min-height: calc(100vh - 20rem);
 }
 
-.background .circle-1 {
-    display: block;
-    width: 25rem;
-    height: 20rem;
-    border-radius: 30rem;
-    position: fixed;
-    top: 1rem;
-    left: 20rem;
-    animation: animate-circle-1 240s infinite;
-    filter: blur(5rem);
-    z-index: -1;
-}
-
-.background .circle-2 {
-    display: block;
-    width: 35rem;
-    height: 35rem;
-    border-radius: 35rem;
-    filter: blur(5rem);
-    position: fixed;
-    top: 0;
-    left: 0;
-    animation: animate-circle-2 240s infinite;
-    z-index: -1;
-}
-
-.background .circle-3 {
-    display: block;
-    width: 25rem;
-    height: 20rem;
-    border-radius: 30rem;
-    position: fixed;
-    top: 15rem;
-    left: 15rem;
-    animation: animate-circle-3 240s infinite;
-    filter: blur(5rem);
-    z-index: -1;
-}
-
-.background .circle-1 {
-    background-color: var(--circle-1);
-}
-
-.background .circle-2 {
-    background-color: var(--circle-2);
-}
-
-.background .circle-3 {
-    background-color: var(--circle-3);
-}
-
-@keyframes animate-circle-1 {
-    0% {
-        top: 1rem;
-        left: 20rem;
-    }
-    33% {
-        top: 70vh;
-        left: 40vw;
-    }
-    66% {
-        top: 10vh;
-        left: 60vw;
-    }
-    100% {
-        top: 1rem;
-        left: 20rem;
-    }
-}
-
-@keyframes animate-circle-2 {
-    0% {
-        top: 0;
-        left: 0;
-    }
-    33% {
-        top: 70vh;
-        left: 50vw;
-    }
-    66% {
-        top: -20vh;
-        left: 70vw;
-    }
-    100% {
-        top: 0;
-        left: 0;
-    }
-}
-
-@keyframes animate-circle-3 {
-    0% {
-        top: 15rem;
-        left: 15rem;
-    }
-    33% {
-        top: 50vh;
-        left: 60vw;
-    }
-    66% {
-        top: -10vh;
-        left: 50vw;
-    }
-    100% {
-        top: 15rem;
-        left: 15rem;
-    }
-}
-
-@media screen and (max-width: 1040px) {
-    header nav ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        column-gap: 0.5rem;
-    }
-    header nav ul li {
-        display: block;
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    header nav ul {
-        grid-template-columns: 1fr 1fr 1fr;
-        row-gap: 0.5rem;
-    }
-}
 
 @media screen and (max-width: 600px) {
     header nav ul {
@@ -212,6 +43,10 @@ main {
     
     header nav ul li {
         text-align: left;
+    }
+
+    header nav ul li:nth-child(2n) {
+        text-align: right;
     }
 }
 
