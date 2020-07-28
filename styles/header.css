@@ -10,7 +10,7 @@
 
 #main-header nav {
     width: 60rem;
-    max-width: 95vw;
+    max-width: 85vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -62,4 +62,46 @@
     right: -3.4rem;
     padding: 0;
     transform: rotate(90deg);
+}
+
+@media screen and (max-width: 750px) {
+    #main-header {
+        position: absolute;
+    }
+
+    #main-header nav ul.internal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0.75rem;
+    }
+
+    #main-header nav ul.internal li {
+        text-align: left;
+    }
+
+    #main-header nav ul.internal li:nth-child(2n) {
+        text-align: right;
+    }
+
+    #main-header nav ul li {
+        font-size: 0.85rem;
+    }
+
+    #main-header .subscribe {
+        position: relative;
+        top: 1.75rem;
+        left: 0;
+        padding: 0;
+        transform: rotate(0);
+        text-align: left;
+    }
+
+    #main-header .support {
+        position: relative;
+        top: 2.5rem;
+        left: 0;
+        padding: 0;
+        transform: rotate(0);
+        text-align: left;
+    }
 }

@@ -153,8 +153,7 @@ main .table-navigation .next {
     text-align: right;
 }
 
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     main .intro, main .filter-wrapper {
         grid-template-columns: 1fr;
         row-gap: 1rem;
@@ -165,10 +164,15 @@ main .table-navigation .next {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
     main .filter-wrapper .filters {
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 1rem;
+    }
+
+    main .filter-wrapper .filters li:last-child {
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
 
     main .resources .resource ul {

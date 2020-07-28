@@ -28,30 +28,27 @@ body {
 
 main {
     width: 60rem;
-    max-width: 95vw;
+    max-width: 85vw;
     margin: 7rem auto 5rem auto;
     position: relative;
     min-height: 100vh;
     min-height: calc(100vh - 20rem);
 }
 
-
-@media screen and (max-width: 600px) {
-    header nav ul {
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    header nav ul li {
-        text-align: left;
+@media screen and (max-width: 750px) {
+    body {
+        background-image: linear-gradient(var(--background) 15%, var(--contrast) 85%);
+        background-size: 100% 100%;
+        background-attachment: scroll;
     }
 
-    header nav ul li:nth-child(2n) {
-        text-align: right;
+    main {
+        margin-top: 10rem;
     }
 }
 
 @media (prefers-reduced-motion) {
-    .background .circle-1, .background .circle-2, .background .circle-3 {
+    * {
         animation: none;
     }
 }
