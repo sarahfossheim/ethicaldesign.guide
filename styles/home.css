@@ -2,7 +2,7 @@ main .intro {
     width: 100%;
     display: grid;
     grid-template-columns: 8rem 1fr;
-    column-gap: 6.5rem;
+    column-gap: 10rem;
 }
 
 main .intro h1 {
