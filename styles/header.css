@@ -36,16 +36,30 @@
 #main-header nav ul li a {
     color: var(--text-normal);
     text-decoration: none;
+    background-image: linear-gradient(var(--accent-2), var(--accent-2)),
+        linear-gradient(var(--text-normal), var(--text-normal)),
+        linear-gradient(
+            transparent 40%,
+            var(--text-normal) 40% 62.5%,
+            transparent 62.5%
+        );
+    background-size: 0 0, 0 0, 0 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 0.25s background;
+}
+
+#main-header nav ul.external li {
+    background-size: 0 0, 0 0, 100% 0;
 }
 
 #main-header nav ul li a:hover {
-    background-image: linear-gradient(5deg, transparent 33%, var(--accent-1) 33% 66%, transparent 66%);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 0 0, 0 0, 100% 100%;
+    animation: link-hover 0.25s 0.10s forwards, link-hover-2 0.25s 4.25s forwards;
 }
 
-#main-header nav ul li:nth-child(2n) a:hover {
-    background-image: linear-gradient(-5deg, transparent 33%, var(--accent-1) 33% 66%, transparent 66%);
+#main-header nav ul li a:focus {
+    border: 2px solid var(--text-normal);
 }
 
 #main-header .subscribe {
@@ -104,5 +118,49 @@
         padding: 0;
         transform: rotate(0);
         text-align: left;
+    }
+}
+
+@keyframes link-hover {
+    0% {
+        background-size: 0 0, 100% 0, 100% 100%;
+        color: var(--text-normal);
+    }
+    100% {
+        background-size: 0 0, 100% 100%, 100% 100%;
+        color: var(--background)
+    }
+}
+
+@keyframes link-hover-2 {
+    0% {
+        background-size: 100% 0, 100% 100%, 100% 100%;
+        color: var(--background);
+    }
+    100% {
+        background-size: 100% 100%, 100% 100%, 100% 100%;
+        color: var(--selection-text);
+    }
+}
+
+@keyframes link-hover-ex {
+    0% {
+        background-size: 0 0, 100% 0, 100% 100%;
+        color: var(--text-normal);
+    }
+    100% {
+        background-size: 0 0, 100% 100%, 100% 100%;
+        color: var(--background)
+    }
+}
+
+@keyframes link-hover-2-ex {
+    0% {
+        background-size: 100% 0, 100% 100%, 100% 100%;
+        color: var(--background);
+    }
+    100% {
+        background-size: 100% 100%, 100% 100%, 100% 100%;
+        color: var(--selection-text);
     }
 }
