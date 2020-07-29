@@ -55,7 +55,7 @@
 
 #main-header nav ul li a:hover {
     background-size: 0 0, 0 0, 100% 100%;
-    animation: link-hover 0.25s 0.10s forwards, link-hover-2 0.25s 4.25s forwards;
+    animation: link-hover 0.25s 0.10s forwards, link-hover-2 0.25s 4.25s forwards, link-hover-3 0.15s 10s forwards;
 }
 
 #main-header nav ul li a:focus {
@@ -143,24 +143,13 @@
     }
 }
 
-@keyframes link-hover-ex {
+@keyframes link-hover-3 {
     0% {
-        background-size: 0 0, 100% 0, 100% 100%;
-        color: var(--text-normal);
-    }
-    100% {
-        background-size: 0 0, 100% 100%, 100% 100%;
-        color: var(--background)
-    }
-}
-
-@keyframes link-hover-2-ex {
-    0% {
-        background-size: 100% 0, 100% 100%, 100% 100%;
-        color: var(--background);
-    }
-    100% {
         background-size: 100% 100%, 100% 100%, 100% 100%;
         color: var(--selection-text);
+    }
+    100% {
+        background-size: 100% 0%, 100% 100%, 100% 100%;
+        color: var(--background);
     }
 }

@@ -6,7 +6,7 @@ footer {
 footer .info {
     display: grid;
     grid-template-columns: 1fr 0.35fr;
-    width: 49rem;
+    width: 60rem;
     max-width: 85vw;
     margin: 0 auto;
     padding: 4rem 0;
