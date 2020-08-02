@@ -11,12 +11,10 @@
     --selection-text: #FFF;
 }
 
-/* #about {
-    --background: #ADD0CA;
-    --selection-bg: #fe6b58;
-    --selection-text: #000;
+#about {
+    --background: #C7F0B1;
 }
 
 #submit {
-    --background: #D1DA8D;
-} */
+    --background: #F2A2F8;
+}

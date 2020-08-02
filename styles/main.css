@@ -35,6 +35,68 @@ main {
     min-height: calc(100vh - 20rem);
 }
 
+main .block h1 {
+    font-size: 1.75rem;
+    font-family: "Casta-ExtraBoldExpanded";
+    font-family: "SyneExtra";
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+}
+
+main .block p {
+    line-height: 1.6rem;
+}
+
+main .block p a {
+    color: var(--text-normal);
+    text-decoration-style: dotted;
+    transition: 0.25s background;
+}
+
+main .block p a:hover {
+    background-color: var(--contrast);
+}
+
+main .block ul {
+    line-height: 1.6rem;
+    list-style-position: inside;
+    padding: 0 5%;
+}
+
+body:not(#home) main .block ul, body:not(#home) main .block p {
+    margin-bottom: 1.5rem;
+}
+
+body:not(#home) main .block h1 {
+    margin-bottom: 2.5rem;
+}
+
+main .col-1 {
+    width: 40rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+main .col-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    column-gap: 10rem;
+}
+
+main .empty-col-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    column-gap: 10rem;
+}
+
+main .empty-col-2 h1, main .empty-col-2 div {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-right: 5rem;
+}
+
 @media screen and (max-width: 750px) {
     body {
         background-image: linear-gradient(var(--background) 15%, var(--contrast) 85%);

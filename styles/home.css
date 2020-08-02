@@ -1,36 +1,8 @@
-main .intro {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 8rem 1fr;
-    column-gap: 10rem;
-}
-
-main .intro h1 {
-    font-size: 1.75rem;
-    font-family: "Casta-ExtraBoldExpanded";
-    font-family: "SyneExtra";
-    font-weight: normal;
-}
-
-main .intro p {
-    line-height: 1.5rem;
-}
-
-main .intro p a {
-    color: var(--text-normal);
-    text-decoration-style: dotted;
-    transition: 0.25s background;
-}
-
-main .intro p a:hover {
-    background-color: var(--accent-1);
-}
-
 main .filter-wrapper {
     width: 100%;
     display: grid;
     grid-template-columns: 8rem 1fr;
-    column-gap: 6.5rem;
+    column-gap: 10rem;
     margin-top: 5rem;
 }
 
@@ -39,7 +11,7 @@ main .filter-wrapper .filters {
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 0.5rem;
+    column-gap: 1rem;
 }
 
 main .filter-wrapper .filters li a, main .filter-wrapper .filters li.active a {
@@ -129,6 +101,15 @@ main .resources .resource ul li a:after {
     left: 0;
 }
 
+main .resources .resource:hover {
+    background-color: var(--text-normal);
+    color: var(--contrast);
+}
+
+main .resources .resource:hover a {
+    color: var(--contrast);
+}
+
 main .table-navigation {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -154,7 +135,7 @@ main .table-navigation .next {
 }
 
 @media screen and (max-width: 1200px) {
-    main .intro, main .filter-wrapper {
+    main .col-2, main .filter-wrapper {
         grid-template-columns: 1fr;
         row-gap: 1rem;
     }
@@ -175,11 +156,48 @@ main .table-navigation .next {
         grid-column-end: 4;
     }
 
+    main .filter-wrapper .filters li.active a {
+        transform: rotate(0deg);
+    }
+    
+    main .filter-wrapper .filters li a:hover {
+        transform: rotate(0deg);
+    }
+
     main .resources .resource ul {
         grid-template-columns: 1fr;
+    }
+
+    main .resources .resource ul li {
+        text-overflow: unset;
+        white-space: normal;
+        overflow: visible;
+    }
+
+    main .resources .resource:hover {
+        background-color: transparent;
+        color: var(--text-normal);
+    }
+
+    main .resources .resource:hover ul li a {
+        background-color: var(--text-normal);
+        color: var(--contrast);
+    }
+
+    main .resources .resource ul li a:after {
+        display: none;
     }
     
     main .resources .resource ul li:last-child {
         text-align: left;
+    }
+
+    main .resources .resource ul li:last-child span {
+        background-color: transparent;
+        text-transform: capitalize;
+        font-size: 1rem;
+        letter-spacing: 0px;
+        padding: 0;
+        border-radius: 0;
     }
 }
