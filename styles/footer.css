@@ -3,43 +3,85 @@ footer {
     position: relative;
 }
 
-footer .info {
-    display: grid;
-    grid-template-columns: 1fr 0.35fr;
-    width: 60rem;
-    max-width: 85vw;
-    margin: 0 auto;
-    padding: 4rem 0;
-}
-
-footer .info .links {
-    text-align: left;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-footer .info .logo {
-    text-align: right;
-    grid-column: 2;
-    grid-row: 1;
-}
-
-footer .info .logo h2 {
-    font-family: "Casta-ExtraBoldExpanded", serif;
-    font-family: "SyneExtra";
-    font-weight: normal;
-    font-size: 1.75rem;
-}
-
 footer .credits {
     text-align: center;
     height: 3rem;
     padding-top: 1rem;
     background-color: var(--background);
+    display: block;
+    width: 100vw;
 }
 
 footer .credits a {
     color: var(--text-normal);
+}
+
+footer #revue-embed {
+    width: 40rem;
+    max-width: 85vw;
+    margin: 0 auto 5rem auto;
+    padding: 3rem;
+
+    background-image: linear-gradient(white, white),
+    repeating-linear-gradient(
+      45deg,
+      var(--background),
+      var(--background) 7px,
+      var(--text-normal) 7px,
+      var(--text-normal) 12px 
+    );
+    background-size: 100% 100%, 100% 100%;
+    background-size: calc(100% - 1rem) calc(100% - 1rem), 100% 100%;
+    background-position: 0.5rem 0.5rem, 0 0;
+    background-repeat: no-repeat;
+}
+
+footer #revue-embed h2 {
+    font-family: "SyneBold", "Syne", sans-serif;
+    margin-bottom: 0.25rem;
+}
+
+footer #revue-embed p {
+    margin-bottom: 0.75rem;
+}
+
+footer #revue-embed form label {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+footer #revue-embed form input:not([type="submit"]) {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    margin-bottom: 1.25rem;
+    max-width: 100%;
+    width: 20rem;
+    border: 1px solid var(--text-normal);
+    color: var(--text-normal);
+    border-radius: 2px;
+    font-family: "Archivo", "HelveticaNeue", Helvetica, sans-serif;
+}
+
+footer #revue-embed form input:not([type="submit"]):focus {
+    outline-color: var(--selection-bg);
+}
+
+footer #revue-embed form input[type="submit"] {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-family: "SyneBold", "Archivo", "HelveticaNeue", Helvetica, sans-serif;
+    font-size: 1rem;
+    color: var(--text-normal);
+    background-color: var(--background);
+    border: 2px solid var(--text-normal);
+    border-radius: 3px;
+    transition: 0.3s background, 0.3s color;
+}
+
+footer #revue-embed form input[type="submit"]:hover {
+    background-color: var(--text-normal);
+    color: var(--background);
 }
 
 @media screen and (max-width: 850px) {

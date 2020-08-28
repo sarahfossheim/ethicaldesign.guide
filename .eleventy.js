@@ -17,23 +17,42 @@ module.exports = function(eleventyConfig) {
     url: "TODO",
     author: "Sarah L. Fossheim"
   });
-  eleventyConfig.addCollection('resources', collection => {
+  eleventyConfig.addCollection("resources", collection => {
     return collection.getFilteredByGlob('resources/*/*.md');
   });
-  eleventyConfig.addCollection('books', collection => {
+  eleventyConfig.addCollection("books", collection => {
     return collection.getFilteredByGlob('resources/books/*.md');
   });
-  eleventyConfig.addCollection('articles', collection => {
+  eleventyConfig.addCollection("articles", collection => {
     return collection.getFilteredByGlob('resources/articles/*.md');
   });
-  eleventyConfig.addCollection('tools', collection => {
+  eleventyConfig.addCollection("tools", collection => {
     return collection.getFilteredByGlob('resources/tools/*.md');
   });
-  eleventyConfig.addCollection('courses', collection => {
+  eleventyConfig.addCollection("courses", collection => {
     return collection.getFilteredByGlob('resources/courses/*.md');
+  });
+  eleventyConfig.addCollection("categoryList", collection => {
+    let categoryList = [];
+    collection.getAll().forEach((item) => {
+      if("categories" in item.data){
+        const categories = item.data.categories;
+        for(let category of categories){
+          category = category.toLowerCase();
+          if(!categoryList.includes(category) && !categoryList.includes(category.replace(" ", ""))){
+            categoryList.push(category);
+          }
+        }
+      }
+    })
+    console.log("category list is", categoryList);
+    return categoryList;
   });
   eleventyConfig.addFilter('consolePrint', content => {
     console.log(content);
+  });
+  eleventyConfig.addFilter('removeSpaces', content => {
+    return content.replace(" ", "");
   });
   return {
     passthroughFileCopy: true

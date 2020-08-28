@@ -49,10 +49,6 @@
     transition: 0.25s background;
 }
 
-#main-header nav ul.external li {
-    background-size: 0 0, 0 0, 100% 0;
-}
-
 #main-header nav ul li a:hover {
     background-size: 0 0, 0 0, 100% 100%;
     animation: link-hover 0.25s 0.10s forwards, link-hover-2 0.25s 4.25s forwards, link-hover-3 0.15s 10s forwards;
@@ -60,22 +56,6 @@
 
 #main-header nav ul li a:focus {
     border: 2px solid var(--text-normal);
-}
-
-#main-header .subscribe {
-    position: fixed;
-    top: 20rem;
-    left: -3.4rem;
-    padding: 0;
-    transform: rotate(-90deg);
-}
-
-#main-header .support {
-    position: fixed;
-    top: 20rem;
-    right: -3.4rem;
-    padding: 0;
-    transform: rotate(90deg);
 }
 
 @media screen and (max-width: 750px) {

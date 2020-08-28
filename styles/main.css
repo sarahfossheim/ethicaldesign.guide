@@ -12,9 +12,9 @@ body {
     font-family: "Archivo", sans-serif;
     color: var(--text-normal);
     background-color: var(--background);
-    background-image: linear-gradient(var(--background) 15%, var(--contrast), var(--background) 85%),
-    linear-gradient(var(--background) 15%, var(--contrast), var(--background) 85%),
-        linear-gradient(var(--background) 15%, var(--contrast) 85%);
+    background-image: linear-gradient(var(--background) 15%, var(--background), var(--background) 85%),
+        linear-gradient(var(--background) 15%, var(--background), var(--background) 85%),
+        linear-gradient(var(--background) 30%, var(--contrast) 85%);
     background-size: 2.5rem 100vh, 2.5rem 100vh, 100% 100%;
     background-attachment: fixed, fixed, scroll;
     background-repeat: no-repeat, no-repeat, repeat;
@@ -29,6 +29,7 @@ body {
 main {
     width: 60rem;
     max-width: 85vw;
+    min-height: 100vh;
     margin: 7rem auto 5rem auto;
     position: relative;
     min-height: 100vh;

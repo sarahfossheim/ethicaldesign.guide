@@ -1,0 +1,13 @@
+---
+pagination:
+  data: collections.categoryList
+  size: 1
+  alias: tag
+  addAllPagesToCollections: true
+layout: home.liquid
+permalink: /resources/{{ tag | removeSpaces }}/
+---
+
+<h1>Tagged “{{ tag }}”</h1>
+
+{% include resources.liquid, tag: {{tag}} %}

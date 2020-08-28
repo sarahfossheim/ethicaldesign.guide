@@ -1,7 +1,7 @@
 :root {
     --background: #D1DA8D;
     --seethrough: rgba(85, 68, 74, 0.075);
-    --text-normal: #474353;
+    --text-normal: #332E3F;
     --accent-1: #dbee2e;
     --accent-2: #7964FF;
     --accent-3: #f80122;
@@ -13,8 +13,10 @@
 
 #about {
     --background: #C7F0B1;
+    --background: #83d5b9;
 }
 
 #submit {
     --background: #F2A2F8;
+    --background: #f9c2c4;
 }
