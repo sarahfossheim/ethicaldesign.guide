@@ -16,5 +16,6 @@
 }
 
 #submit {
-    --background: #f9c2c4;
+    --background: rgba(249, 194, 196, 1);
+    --background-light: rgba(249, 194, 196, 0.35);
 }

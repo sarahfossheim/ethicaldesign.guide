@@ -38,10 +38,17 @@ main {
 
 main .block h1 {
     font-size: 1.75rem;
-    font-family: "Casta-ExtraBoldExpanded";
     font-family: "SyneExtra";
     font-weight: normal;
     margin-bottom: 1.25rem;
+}
+
+main .block h2 {
+    margin: 2rem 0 0.5rem 0;
+    font-family: "SyneBold";
+    width: 75%;
+    border-left: 0.5rem solid var(--background);
+    padding-left: 0.5rem;
 }
 
 main .block p {
@@ -65,8 +72,11 @@ main a:not(:hover):focus {
 
 main .block ul {
     line-height: 1.6rem;
-    list-style-position: inside;
-    padding: 0 5%;
+    padding: 0 1rem;
+}
+
+main .block ul li {
+    margin-bottom: 0.5rem;
 }
 
 body:not(#home) main .block ul, body:not(#home) main .block p {
@@ -75,6 +85,22 @@ body:not(#home) main .block ul, body:not(#home) main .block p {
 
 body:not(#home) main .block h1 {
     margin-bottom: 2.5rem;
+}
+
+main pre {
+    padding: 2rem;
+    background-color: var(--background-light);
+    overflow-x: scroll;
+    margin-bottom: 2rem;
+}
+
+main code {
+    background-color: var(--background-light);
+}
+
+main pre code {
+    background-color: transparent;
+    white-space: pre-wrap;
 }
 
 .col-1 {
@@ -112,6 +138,12 @@ body:not(#home) main .block h1 {
 
     main {
         margin-top: 10rem;
+    }
+
+
+    main .block h2 {
+        margin: 2rem 0 0.75rem 0;
+        width: 100%;
     }
 }
 
