@@ -26,7 +26,7 @@ footer .credits a {
 footer #revue-embed {
     width: 40rem;
     max-width: 85vw;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 1rem auto;
     padding: 3rem;
 
     background-image: linear-gradient(white, white),
@@ -97,18 +97,27 @@ footer .info {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    text-align: center;
 }
 
 footer .info p a {
     font-size: 0.85rem;
     color: var(--text-normal);
+    opacity: 0.75;
+}
+
+footer .info p:first-child {
+    text-align: left;
+}
+
+footer .info p:nth-child(2n) {
+    text-align: right;
 }
 
 @media screen and (max-width: 850px) {
     footer .info {
         grid-template-columns: 1fr;
         margin-bottom: -3rem;
+        margin-top: 2.5rem;
     }
 
     footer .info p {
@@ -129,7 +138,11 @@ footer .info p a {
         padding-bottom: 2.5rem;
     }
 
-    footer .credits p {
+    footer .credits p{
         font-size: 0.75rem;
+    }
+
+    footer .info p:first-child, footer .info p:nth-child(2n)  {
+        text-align: center;
     }
 }
