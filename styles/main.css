@@ -58,7 +58,7 @@ main .block p a:hover {
     background-color: var(--background);
 }
 
-main .block p a:focus {
+main a:not(:hover):focus {
     background-color: var(--background);
     outline-color: var(--text-normal);
 }
@@ -77,27 +77,27 @@ body:not(#home) main .block h1 {
     margin-bottom: 2.5rem;
 }
 
-main .col-1 {
+.col-1 {
     width: 40rem;
     max-width: 100%;
     margin: 0 auto;
 }
 
-main .col-2 {
+.col-2 {
     width: 100%;
     display: grid;
     grid-template-columns: 8rem 1fr;
     column-gap: 10rem;
 }
 
-main .empty-col-2 {
+.empty-col-2 {
     width: 100%;
     display: grid;
     grid-template-columns: 8rem 1fr;
     column-gap: 10rem;
 }
 
-main .empty-col-2 h1, main .empty-col-2 div {
+.empty-col-2 h1, .empty-col-2 div {
     grid-column-start: 2;
     grid-column-end: 3;
     padding-right: 5rem;
@@ -105,7 +105,7 @@ main .empty-col-2 h1, main .empty-col-2 div {
 
 @media screen and (max-width: 750px) {
     body {
-        background-image: linear-gradient(var(--background) 15%, var(--contrast) 85%);
+        background-image: linear-gradient(var(--contrast) 15%, var(--contrast) 85%);
         background-size: 100% 100%;
         background-attachment: scroll;
     }

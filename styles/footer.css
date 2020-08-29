@@ -13,6 +13,12 @@ footer .credits {
     margin-top: 5rem;
 }
 
+footer .credits p {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer .credits a {
     color: var(--text-normal);
 }
@@ -86,30 +92,44 @@ footer #revue-embed form input[type="submit"]:hover {
 }
 
 footer .info {
-    width: 60rem;
+    width: 40rem;
     max-width: 85vw;
-    border-top: 2px solid var(--text-normal);
-    padding-top: 3rem;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+footer .info p a {
+    font-size: 0.85rem;
+    color: var(--text-normal);
 }
 
 @media screen and (max-width: 850px) {
     footer .info {
         grid-template-columns: 1fr;
-        row-gap: 1rem;
+        margin-bottom: -3rem;
     }
 
-    footer .info .links {
-        grid-column: 1;
-        grid-row: 2;
+    footer .info p {
+        margin-bottom: 1rem;
     }
-    footer .info .logo {
-        grid-column: 1;
-        grid-row: 1;
+
+    footer .info p a {
+        font-size: 1rem;
+        color: var(--text-normal);
     }
 
     footer .info .logo h2 {
         font-size: 1rem;
         text-align: center;
+    }
+
+    footer .credits {
+        padding-bottom: 2.5rem;
+    }
+
+    footer .credits p {
+        font-size: 0.75rem;
     }
 }

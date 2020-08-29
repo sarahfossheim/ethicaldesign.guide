@@ -190,16 +190,6 @@ main .table-navigation .next {
         overflow: visible;
     }
 
-    main .resources .resource:hover {
-        background-color: transparent;
-        color: var(--text-normal);
-    }
-
-    main .resources .resource:hover ul li a {
-        background-color: var(--text-normal);
-        color: var(--contrast);
-    }
-
     main .resources .resource ul li a:after {
         display: none;
     }

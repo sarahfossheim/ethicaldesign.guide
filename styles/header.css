@@ -133,3 +133,11 @@
         color: var(--background);
     }
 }
+
+@media screen and (max-width: 750px) {
+    #main-header {
+        background-color: var(--contrast);
+        border-top: 0.25rem solid var(--background);
+        padding-top: 0.5rem;
+    }
+}
