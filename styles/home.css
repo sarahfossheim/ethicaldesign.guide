@@ -63,7 +63,7 @@ main .resources .resource:last-child {
 main .resources .resource ul {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 0.75fr 0.25fr;
+    grid-template-columns: 1fr 0.75fr;
     column-gap: 1.5rem;
 }
 
@@ -71,20 +71,6 @@ main .resources .resource ul li {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; 
-}
-
-main .resources .resource ul li:last-child {
-    text-align: right;
-    overflow: visible;
-}
-
-main .resources .resource ul li:last-child span {
-    background-color: var(--seethrough);
-    text-transform: uppercase;
-    font-size: 0.65rem;
-    letter-spacing: 0.5px;
-    padding: 0.3rem 0.5rem 0.25rem 0.5rem;
-    border-radius: 1rem;
 }
 
 main .resources .resource ul li a {
@@ -167,11 +153,6 @@ main .table-navigation .next {
         row-gap: 1rem;
     }
 
-    main .filter-wrapper .filters li:last-child {
-        grid-column-start: 2;
-        grid-column-end: 4;
-    }
-
     main .filter-wrapper .filters li.active a {
         transform: rotate(0deg);
     }
@@ -194,16 +175,4 @@ main .table-navigation .next {
         display: none;
     }
     
-    main .resources .resource ul li:last-child {
-        text-align: left;
-    }
-
-    main .resources .resource ul li:last-child span {
-        background-color: transparent;
-        text-transform: capitalize;
-        font-size: 1rem;
-        letter-spacing: 0px;
-        padding: 0;
-        border-radius: 0;
-    }
 }

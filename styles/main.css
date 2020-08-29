@@ -129,6 +129,10 @@ main pre code {
     padding-right: 5rem;
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
+
 @media screen and (max-width: 750px) {
     body {
         background-image: linear-gradient(var(--contrast) 15%, var(--contrast) 85%);

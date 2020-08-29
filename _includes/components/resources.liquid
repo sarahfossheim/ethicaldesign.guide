@@ -4,12 +4,12 @@
             <ul>
                 <li><a href="{{resource.data.link}}"><span>{{resource.data.title}}</span></a></li>
                 <li>
+                    <span class="capitalize">{{resource.data.type}}</span>
                     by
                     {% for author in resource.data.authors %}
                         <span>{{author}}</span>
                     {% endfor %}
                 </li>
-                <li><span>{{resource.data.type}}</span></li>
             </ul>
         </li>
     {% endfor %}

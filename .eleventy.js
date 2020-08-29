@@ -18,19 +18,19 @@ module.exports = function(eleventyConfig) {
     author: "Sarah L. Fossheim"
   });
   eleventyConfig.addCollection("resources", collection => {
-    return collection.getFilteredByGlob('resources/*/*.md');
+    return collection.getFilteredByGlob('resources/*/*.md').reverse();
   });
   eleventyConfig.addCollection("books", collection => {
-    return collection.getFilteredByGlob('resources/books/*.md');
+    return collection.getFilteredByGlob('resources/books/*.md').reverse();
   });
   eleventyConfig.addCollection("articles", collection => {
-    return collection.getFilteredByGlob('resources/articles/*.md');
+    return collection.getFilteredByGlob('resources/articles/*.md').reverse();
   });
   eleventyConfig.addCollection("tools", collection => {
-    return collection.getFilteredByGlob('resources/tools/*.md');
+    return collection.getFilteredByGlob('resources/tools/*.md').reverse();
   });
   eleventyConfig.addCollection("courses", collection => {
-    return collection.getFilteredByGlob('resources/courses/*.md');
+    return collection.getFilteredByGlob('resources/courses/*.md').reverse();
   });
   eleventyConfig.addCollection("categoryList", collection => {
     let categoryList = [];
