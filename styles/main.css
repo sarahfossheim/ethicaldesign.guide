@@ -11,10 +11,10 @@ html {
 body {
     font-family: "Archivo", sans-serif;
     color: var(--text-normal);
-    background-color: var(--background);
+    background-color: var(--contrast);
     background-image: linear-gradient(var(--background) 15%, var(--background), var(--background) 85%),
         linear-gradient(var(--background) 15%, var(--background), var(--background) 85%),
-        linear-gradient(var(--background) 30%, var(--contrast) 85%);
+        linear-gradient(var(--contrast) 25%, var(--contrast), var(--contrast) 85%);
     background-size: 2.5rem 100vh, 2.5rem 100vh, 100% 100%;
     background-attachment: fixed, fixed, scroll;
     background-repeat: no-repeat, no-repeat, repeat;
@@ -55,7 +55,12 @@ main .block p a {
 }
 
 main .block p a:hover {
-    background-color: var(--contrast);
+    background-color: var(--background);
+}
+
+main .block p a:focus {
+    background-color: var(--background);
+    outline-color: var(--text-normal);
 }
 
 main .block ul {

@@ -51,7 +51,8 @@ main .resources {
 main .resources .resource {
     border-top: 2px solid var(--text-normal);
     list-style-type: none;
-    padding: 1.5rem 0.25rem;
+    padding: 1.5rem 0.5rem;
+    padding: 1.5rem calc(0.5rem + 2px);
     position: relative;
 }
 
@@ -102,12 +103,27 @@ main .resources .resource ul li a:after {
 }
 
 main .resources .resource:hover {
-    background-color: var(--text-normal);
-    color: var(--contrast);
+    background-color: var(--background);
+    color: var(--text-normal);
+    border-left: 2px solid var(--text-normal);
+    border-right: 2px solid var(--text-normal);
+    padding: 1.5rem 0.5rem;
 }
 
 main .resources .resource:hover a {
-    color: var(--contrast);
+    color: var(--text-normal);
+}
+
+main .resources .resource:not(:hover) a:focus:after {
+    display: inline-block;
+    outline-color: var(--text-normal);
+    background-color: var(--background);
+    color: var(--text-normal);
+    border: 2px solid var(--text-normal);
+    padding: 0 0;
+    z-index: -1;
+    margin-top: -2px;
+    width: calc(100% - 4px);
 }
 
 main .table-navigation {

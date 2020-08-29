@@ -10,6 +10,7 @@ footer .credits {
     background-color: var(--background);
     display: block;
     width: 100vw;
+    margin-top: 5rem;
 }
 
 footer .credits a {
@@ -19,7 +20,7 @@ footer .credits a {
 footer #revue-embed {
     width: 40rem;
     max-width: 85vw;
-    margin: 0 auto 5rem auto;
+    margin: 0 auto 3rem auto;
     padding: 3rem;
 
     background-image: linear-gradient(white, white),
@@ -82,6 +83,14 @@ footer #revue-embed form input[type="submit"] {
 footer #revue-embed form input[type="submit"]:hover {
     background-color: var(--text-normal);
     color: var(--background);
+}
+
+footer .info {
+    width: 60rem;
+    max-width: 85vw;
+    border-top: 2px solid var(--text-normal);
+    padding-top: 3rem;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 850px) {

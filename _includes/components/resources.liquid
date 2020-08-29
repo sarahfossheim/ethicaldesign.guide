@@ -2,7 +2,7 @@
     {% for resource in pagination.items %}
         <li class="resource">
             <ul>
-                <li><a href="{{resource.data.link}}">{{resource.data.title}}</a></li>
+                <li><a href="{{resource.data.link}}"><span>{{resource.data.title}}</span></a></li>
                 <li>
                     by
                     {% for author in resource.data.authors %}
