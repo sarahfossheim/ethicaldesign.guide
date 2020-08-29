@@ -50,6 +50,7 @@ footer #revue-embed h2 {
 
 footer #revue-embed p {
     margin-bottom: 0.75rem;
+    line-height: 1.5rem;
 }
 
 footer #revue-embed form label {
@@ -99,10 +100,9 @@ footer .info {
     grid-template-columns: 1fr 1fr;
 }
 
-footer .info p a {
+footer .info p a.link {
     font-size: 0.85rem;
     color: var(--text-normal);
-    opacity: 0.75;
 }
 
 footer .info p:first-child {
@@ -112,6 +112,7 @@ footer .info p:first-child {
 footer .info p:nth-child(2n) {
     text-align: right;
 }
+
 
 @media screen and (max-width: 850px) {
     footer .info {

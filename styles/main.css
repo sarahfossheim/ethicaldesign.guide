@@ -133,6 +133,37 @@ main pre code {
     text-transform: capitalize;
 }
 
+
+.bmc-button img{ 
+    height: 1.5rem;
+    width: 1.5rem;
+    position: relative;
+    bottom: -1px;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
+.bmc-button {
+    padding: 7px 15px 7px 10px;
+    line-height: 1.75rem;
+    height: 2.5rem;
+    display:inline-flex ;
+    background-color: var(--contrast);
+    margin: 0 auto;
+    color: var(--text-normal);
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "SyneBold", "Archivo", sans-serif;
+    transition: background 0.35s, border 0.35s, color 0.35s;
+    font-size: 0.85rem;
+}
+
+.bmc-button:hover, .bmc-button:focus {
+    background-color: var(--text-normal);
+    color: var(--contrast);
+}
+
+
 @media screen and (max-width: 750px) {
     body {
         background-image: linear-gradient(var(--contrast) 15%, var(--contrast) 85%);
