@@ -85,6 +85,7 @@ footer #revue-embed form input[type="submit"] {
     border: 2px solid var(--text-normal);
     border-radius: 3px;
     transition: 0.3s background, 0.3s color;
+    -webkit-appearance: none;
 }
 
 footer #revue-embed form input[type="submit"]:hover {
