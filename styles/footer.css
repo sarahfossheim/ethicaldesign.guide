@@ -72,7 +72,7 @@ footer #revue-embed form input:not([type="submit"]) {
 }
 
 footer #revue-embed form input:not([type="submit"]):focus {
-    outline-color: var(--selection-bg);
+    outline-color: var(--text-normal);
 }
 
 footer #revue-embed form input[type="submit"] {

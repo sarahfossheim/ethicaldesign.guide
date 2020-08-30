@@ -22,8 +22,8 @@ body {
 }
 
 ::selection {
-    background-color: var(--selection-bg);
-    color: var(--selection-text);
+    background-color: var(--text-normal);
+    color: var(--background);
 }
 
 main {
