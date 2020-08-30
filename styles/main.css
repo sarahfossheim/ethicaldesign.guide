@@ -23,7 +23,7 @@ body {
 
 ::selection {
     background-color: var(--text-normal);
-    color: var(--background);
+    color: var(--contrast);
 }
 
 main {
