@@ -22,26 +22,33 @@ Next, copy the following into the file, and fill in the blanks:
 
 ```
 ---
-title: ""
-authors: []
-categories: []
-link: ""
+title: 
+authors:
+    - 
+type: 
+categories: 
+    - 
+    -
+link:
 ---
 ```
 
-- **Title**: This is the title official title of the resource.
-- **Authors**: The authors of the resource. This is passed in as a list of strings, even if there's only one author. If there are several authors, they should be separated with commas (eg. `authors: ["first author", "second author", "third author"]`).
-- **Categories**: What the resource is about. You don't have to specify the type (eg. "book"), only the topics. _(for now this field is optional)_
-- **Link**: A link to the resource. In case of books, please avoid linking to Amazon and use alternative links instead. Don't use link shortners or affiliate links either.
+Optionally, a short description can be added at the end of the file as well.
 
-Optionally, you can list a _short_ description underneath the last `---`. In case of the book Weapons of Math Destruction by Cathy O'Neil, the path of our file would be `resources/books/weaponsofmathdestruction.md`, with the following content:
+In case of the book Weapons of Math Destruction by Cathy O'Neil, the path of our file would be `resources/books/weaponsofmathdestruction.md`, with the following content:
 
 ```
 ---
-title: "Weapons of Math Destruction"
-authors: ["Cathy O'Neil"]
-categories: ["algorithms", "race", "gender", "artificial intelligence"]
-link: "https://weaponsofmathdestructionbook.com/"
+title: Weapons of Math Destruction
+authors:
+    - Cathy O'Neil
+type: book
+categories: 
+    - race
+    - algorithms
+    - artificial intelligence
+    - gender
+link: https://www.goodreads.com/book/show/28186015-weapons-of-math-destruction?ac=1&from_search=true&qid=dN1hL0r66S&rank=1
 ---
 
 A former Wall Street quant sounds an alarm on the mathematical models that pervade modern life — and threaten to rip apart our social fabric.
