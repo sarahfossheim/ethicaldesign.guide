@@ -1,0 +1,9 @@
+---
+layout: home.liquid
+pagination:
+  data: collections.a11y
+  size: 25
+---
+
+{% include components/filters.liquid, active: "a11y" %}
+{% include components/resources.liquid, pagination: pagination %}

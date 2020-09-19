@@ -1,0 +1,9 @@
+---
+layout: home.liquid
+pagination:
+  data: collections.other
+  size: 25
+---
+
+{% include components/filters.liquid, active: "other" %}
+{% include components/resources.liquid, pagination: pagination %}

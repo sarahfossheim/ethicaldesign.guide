@@ -1,0 +1,9 @@
+---
+layout: home.liquid
+pagination:
+  data: collections.biasai
+  size: 25
+---
+
+{% include components/filters.liquid, active: "biasai" %}
+{% include components/resources.liquid, pagination: pagination %}

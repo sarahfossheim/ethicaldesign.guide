@@ -1,0 +1,9 @@
+---
+layout: home.liquid
+pagination:
+  data: collections.race
+  size: 25
+---
+
+{% include components/filters.liquid, active: "race" %}
+{% include components/resources.liquid, pagination: pagination %}

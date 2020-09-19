@@ -1,0 +1,9 @@
+---
+layout: home.liquid
+pagination:
+  data: collections.queer
+  size: 25
+---
+
+{% include components/filters.liquid, active: "queer" %}
+{% include components/resources.liquid, pagination: pagination %}

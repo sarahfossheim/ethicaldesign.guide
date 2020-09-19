@@ -1,10 +1,70 @@
 <section class="filter-wrapper">
-    <p>Recommendations</p>
     <ul class="filters">
-        <li {% if active contains 'books' %}class="active"{% endif %}><a href="/resources/books">Books</a></li>
-        <li {% if active contains 'articles' %}class="active"{% endif %}><a href="/resources/articles">Articles</a></li>
-        <li {% if active contains 'courses' %}class="active"{% endif %}><a href="/resources/courses">Courses</a></li>
-        <li {% if active contains 'tools' %}class="active"{% endif %}><a href="/resources/tools">Tools</a></li>
-        <li {% if active contains 'all' %}class="active"{% endif %}><a href="/">All resources</a></li>
+        <li {% if active contains 'all' %}class="active"{% endif %}>
+            <a href="/">All resources</a>
+        </li>
+
+        <li {% if active contains 'articles' %}class="active"{% endif %}>
+            <a href="/resources/articles">
+                Articles
+            </a>
+        </li>
+
+        <li {% if active contains 'books' %}class="active"{% endif %}>
+            <a href="/resources/books">
+                Books
+            </a>
+        </li>
+
+        <li {% if active contains 'courses' %}class="active"{% endif %}>
+            <a href="/resources/courses">
+                Courses
+            </a>
+        </li>
+
+        <li {% if active contains 'tools' %}class="active"{% endif %}>
+            <a href="/resources/tools">
+                Tools
+            </a>
+        </li>
+
+        <li {% if active contains 'other' %}class="active"{% endif %}>
+            <a href="/resources/other">
+                Other
+            </a>
+        </li>
     </ul>
+
+    <p>Recommended topics</p>
+    <ul class="filters">
+        <li {% if active contains 'a11y' %}class="active"{% endif %}>
+            <a href="/resources/a11y">
+                Accessibility
+            </a>
+        </li>
+        <li {% if active contains 'biasai' %}class="active"{% endif %}>
+            <a href="/resources/biasai">
+                Bias in AI
+            </a>
+        </li>
+
+        <li {% if active contains 'inclusive' %}class="active"{% endif %}>
+            <a href="/resources/inclusive">
+                Inclusive Design
+            </a>
+        </li>
+
+        <li {% if active contains 'queer' %}class="active"{% endif %}>
+            <a href="/resources/queer">
+                LGBTQIA+
+            </a>
+        </li>
+
+        <li {% if active contains 'race' %}class="active"{% endif %}>
+            <a href="/resources/race">
+                Race
+            </a>
+        </li>
+    </ul>
+    
 </section>
