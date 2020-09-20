@@ -13,7 +13,6 @@ main .filter-wrapper p {
 
 main .filter-wrapper .filters {
     list-style-type: none;
-    margin-bottom: 1.5rem;
 }
 
 main .filter-wrapper .filters li {

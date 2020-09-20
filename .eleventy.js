@@ -1,10 +1,6 @@
 const pluginSEO = require("eleventy-plugin-seo");
 const xmlFiltersPlugin = require('eleventy-xml-plugin');
 
-const getSimilarCategories = function(categoriesA, categoriesB) {
-  return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
-}
-
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('styles');
   eleventyConfig.addPassthroughCopy('js');
