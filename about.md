@@ -8,7 +8,7 @@ Tech is all around us, developing fast, and not going away. Which is why ethics 
 
 Without it, we risk creating products that cause harm, often against already minoritised people. Think of the predictive policing software that’s biased against Black people, products that reinforcing gender stereotypes and excluding non-binary folks, or all the websites that are not accessible to disabled people, to name a few examples.
 
-Ethical Design Guide links to educational resources about the issues the tech industry faces, along with tools and possible solutions. More links will be added continuously, and updates can be received by subscribing to the [RSS feed]() or [bi-weekly newsletter]().
+Tech is always political. The way data is collected and handled is often biased, and many products are neither accessible nor inclusive. Ethical Design Guide is made to share resources on how to create ethical products that don't cause harm. More links will be added continuously. Subscribe to the [mailing list]() to receive a monthly update on new resources and interesting new reads. 
 
 ## Bugs, improvements, and feature requests 
 
