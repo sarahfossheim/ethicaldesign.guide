@@ -52,8 +52,8 @@ main .resources .resource {
     padding: 1.5rem 0.5rem;
     padding: 1.5rem calc(0.5rem + 2px);
     position: relative;
-    line-height: 150%;
-    font-size: 1.25rem;
+    line-height: 130%;
+    font-size: 1.15rem;
 }
 
 main .resources .resource:last-child {
@@ -67,16 +67,12 @@ main .resources .resource ul {
     column-gap: 1.5rem;
 }
 
-main .resources .resource ul li:first-child {
-    line-height: 130%;
-    font-size: 1.5rem;
-}
 
-/* main .resources .resource ul li:nth-child(2n) {
+main .resources .resource ul li{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; 
-} */
+}
 
 main .resources .resource ul li a {
     color: var(--text-normal);
