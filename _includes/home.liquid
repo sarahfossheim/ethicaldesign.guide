@@ -2,7 +2,7 @@
 layout: base.liquid
 pageId: "home"
 ---
-<section class="block col-2">
+<section class="block col-1">
     <h1>Ethical Design Guide</h1>
     <div>
         <p>
@@ -10,14 +10,14 @@ pageId: "home"
             is often biased, and many products are neither accessible nor 
             inclusive. Ethical Design Guide is made to share resources on 
             how to create ethical products that don't 
-            cause harm. More links will be added continuously. 
-            Subscribe to the <a href="">mailing list</a> to receive 
-            a monthly update on new resources and interesting new reads. 
-            And if you have any time or money to spare, consider contributing 
-            to <a href="">Black Lives Matter</a> by signing petitions, sharing 
-            resources or making donations.            
+            cause harm. More links will be added continuously, and shared 
+            through a monthly <a href="">mailing list</a>. 
+              
         </p>
     </div>
 </section>
 
-{{content}}
+<section id="resources" class="block col-2">
+    {% include components/filters.liquid, active: "all" %}
+    {% include components/resources.liquid, pagination: pagination %}
+</section>

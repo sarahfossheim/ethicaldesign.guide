@@ -61,22 +61,13 @@ main .block p a {
     transition: 0.25s background;
 }
 
-main .block p a:hover {
+main .block:not(#resources) p a:hover {
     background-color: var(--background);
 }
 
 main a:not(:hover):focus {
     background-color: var(--background);
     outline-color: var(--text-normal);
-}
-
-main .block ul {
-    line-height: 1.6rem;
-    padding: 0 1rem;
-}
-
-main .block ul li {
-    margin-bottom: 0.5rem;
 }
 
 body:not(#home) main .block ul, body:not(#home) main .block p {
@@ -112,8 +103,8 @@ main pre code {
 .col-2 {
     width: 100%;
     display: grid;
-    grid-template-columns: 8rem 1fr;
-    column-gap: 10rem;
+    grid-template-columns: 16rem 1fr;
+    column-gap: 1rem;
 }
 
 .empty-col-2 {
@@ -163,6 +154,12 @@ main pre code {
     color: var(--contrast);
 }
 
+@media screen and (max-width: 1000px) {
+    .col-2 {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+}
 
 @media screen and (max-width: 750px) {
     body {

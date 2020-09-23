@@ -99,6 +99,7 @@ footer .info {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
 }
 
 footer .info p a.link {

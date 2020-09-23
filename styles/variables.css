@@ -1,6 +1,7 @@
 :root {
     --background: #e5ea84;
-    --seethrough: rgba(85, 68, 74, 0.075);
+    --seethrough: rgba(85, 68, 74, 0.05);
+    --gray: #E8E6E1;
     --text-normal: #474353;
     --accent-1: #dbee2e;
     --accent-2: #7964FF;

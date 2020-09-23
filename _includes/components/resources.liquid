@@ -1,26 +1,28 @@
-<ul class="resources">
-    {% for resource in pagination.items %}
-        <li class="resource">
-            <ul>
-                <li><a href="{{resource.data.link}}"><span>{{resource.data.title}}</span></a></li>
-                <li>
-                    <span class="capitalize">{{resource.data.type}}</span>
-                    by
+<section>
+    <ul class="resource-list">
+        {% for resource in pagination.items %}
+            <li class="resource">
+                <a href="{{resource.data.link}}"><span>{{resource.data.title}}</span></a>
+                <span class="credits">
+                    <span class="capitalize">{{resource.data.type}}</span> about tags.
+                    <br />
+                    By 
                     {% for author in resource.data.authors %}
-                        <span>{{author}}</span>
+                        <span>{{author}}</span>, 
                     {% endfor %}
-                </li>
-            </ul>
-        </li>
-    {% endfor %}
-</ul>
-
-<nav class="table-navigation">
-    {% if pagination.previousPageHref %}
-        <p class="previous"><a href="{{pagination.previousPageHref}}">← Previous</a></p>
-    {% endif %}
-
-    {% if pagination.nextPageHref %}
-        <p class="next"><a href="{{pagination.nextPageHref}}">Next →</a></p>
-    {% endif %}
-</nav>
+                    
+                </span>
+            </li>
+        {% endfor %}
+    </ul>
+    
+    <nav class="table-navigation">
+        {% if pagination.previousPageHref %}
+            <p class="previous"><a href="{{pagination.previousPageHref}}">← Previous</a></p>
+        {% endif %}
+    
+        {% if pagination.nextPageHref %}
+            <p class="next"><a href="{{pagination.nextPageHref}}">Next →</a></p>
+        {% endif %}
+    </nav>    
+</section>
