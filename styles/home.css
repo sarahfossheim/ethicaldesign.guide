@@ -62,7 +62,7 @@
 .resource-list .resource {
     border-top: 2px solid var(--gray);
     list-style-type: none;
-    padding: 1.75rem 0.7rem 1.5rem 0.7rem;
+    padding: 1.75rem 1.75rem 1.5rem 0.7rem;
     line-height: 1.35rem;
     margin-bottom: 0;
     position: relative;
