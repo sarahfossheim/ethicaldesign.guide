@@ -23,6 +23,11 @@ footer .credits a {
     color: var(--text-normal);
 }
 
+footer .credits a:hover {
+    background-color: var(--text-normal);
+    color: var(--background);
+}
+
 footer #revue-embed {
     width: 40rem;
     max-width: 85vw;
