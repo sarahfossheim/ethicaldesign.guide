@@ -20,7 +20,10 @@
 }
 
 .filter-wrapper .filters li {
+    display: inline-block;
+    margin-right: 0.25rem;
     margin-bottom: 1.5rem;
+    font-size: 0.95rem;
 }
 
 .filter-wrapper .filters li a {
@@ -37,7 +40,8 @@
     color: var(--text-normal);
     border: 2px solid var(--text-normal);
     position: relative;
-    left: -2px;    
+    left: -2px;
+    margin-right: -4px;    
 }
 
 .filter-wrapper .filters li.active a {
@@ -140,11 +144,5 @@
     .resource-list .resource {
         padding-left: 0.5rem;
         padding-right: 1.25rem;
-    }
-    .filter-wrapper .filters li {
-        display: inline-block;
-        margin-right: 0.25rem;
-        margin-bottom: 1.5rem;
-        font-size: 0.95rem;
     }
 }
