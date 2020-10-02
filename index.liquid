@@ -5,3 +5,6 @@ pagination:
   data: collections.resources
   size: 20
 ---
+
+{% include components/filters.liquid, active: "all" %}
+{% include components/resources.liquid, pagination: pagination %}
