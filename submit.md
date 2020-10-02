@@ -3,9 +3,9 @@ layout: page.liquid
 pageId: "submit"
 ---
 
-# How to submit a new resource?
+# How to submit a new resource
 
-I will regularly update this directory with new resources. If you see something that's not here (yet) and should be here, you can do so yourself through GitHub. You'll need a GitHub account and limited knowledge of git ([find out how to get started]()), but no programming skills are required.
+I will regularly update this directory with new resources. If you see something that's not here (yet) and should be here, you can do so yourself through [GitHub](https://github.com/sarahfossheim/ethicaldesign.guide). You'll need a GitHub account and limited [knowledge of git](https://guides.github.com/introduction/git-handbook/), but no programming skills are required.
 
 ## Submission guidelines
 
@@ -17,18 +17,18 @@ I do not accept racism, homophobia, transphobia, ableism, sexism, white supremac
 
 ## Adding a resource
 
-First, you'll need to find the project on GitHub and [fork]() it. In the `resources` folder of your copy, you can create a new markdown file (ending in `.md`) under any of the fitting type folders. The filename should be a shortened version of the resource title, and not contain spaces, eg: `weaponsofmathdestruction.md`.
+First, you'll need to find the project on GitHub and fork it. In the `resources` folder of your copy, you can create a new markdown file (ending in `.md`) under any of the fitting type folders. The filename should be a shortened version of the resource title, and not contain spaces, eg: `weaponsofmathdestruction.md`.
 
 Next, copy the following into the file, and fill in the blanks:
 
-```
+```MD
 ---
-title: 
+title:
 authors:
-    - 
-type: 
-categories: 
-    - 
+    -
+type:
+categories:
+    -
     -
 link:
 ---
@@ -38,7 +38,7 @@ Optionally, a short description can be added at the end of the file as well.
 
 In case of the book Weapons of Math Destruction by Cathy O'Neil, the path of our file would be `resources/books/weaponsofmathdestruction.md`, with the following content:
 
-```
+```MD
 ---
 title: Weapons of Math Destruction
 authors:
@@ -55,8 +55,8 @@ link: https://www.goodreads.com/book/show/28186015-weapons-of-math-destruction?a
 A former Wall Street quant sounds an alarm on the mathematical models that pervade modern life — and threaten to rip apart our social fabric.
 ```
 
-After this is done, you'll need to [commit]() and [push]() your changes, and [create a pull request](). The title of the pull request should include what change is made _(eg. "Added the book Weapons of Math Destruction")_. If any context is necessary, please include it in the body of the pull request. The pull request should be labeled as `new resource`. 
+After this is done, you'll need to commit and push your changes, and create a pull request. The title of the pull request should include what change is made _(eg. "Added the book Weapons of Math Destruction")_. If any context is necessary, please include it in the body of the pull request. The pull request should be labeled as `new resource`.
 
 ## Removing a resource
 
-If you see a resource in the list that you think doesn't belong here, you can use a similar flow as described above to remove its file. In this case, add the reasoning for why it should be removed in the description of the pull request and label it as `removed resource`. 
+If you see a resource in the list that you think doesn't belong here, you can use a similar flow as described above to remove its file. In this case, add the reasoning for why it should be removed in the description of the pull request and label it as `removed resource`.

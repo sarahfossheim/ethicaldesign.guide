@@ -34,8 +34,6 @@ If you see a resource that shouldn’t be here or want to add one of your own, p
 
 [Sarah Fossheim](https://fossheim.io/) ([@liatrisbian](https://twitter.com/liatrisbian)) is a multidisciplinary developer and designer focused on creating inclusive and accessible products. They have worked with design agencies, big coroporations, and startups within cancer medicine and education.
 
-They created Ethical Design Guide in August 2020, with the goal of making it easier and more accessible to create inclusive products. 
+They created Ethical Design Guide in August 2020, with the goal of making it easier and more accessible to create inclusive products.
 
-It originally started with a Notion document in June 2020, but was moved over to its own self-hosted platform for several reasons. Doing it this way allows others to submit resources in a supervised way without allowing trolls to misuse the functionality, by creating a pull request on GitHub. 
-
-There is also the issue of Notion's [questionable responses]() to the Black Lives Matter movement, making them no longer viable as a platform for hosting a list of ethical design resources.
+It originally started with a Notion document in June 2020, but was moved over to its own self-hosted platform for several reasons. Doing it this way allows others to submit resources in a supervised way without allowing trolls to misuse the functionality, by creating a pull request on GitHub.
