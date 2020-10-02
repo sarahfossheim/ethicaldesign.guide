@@ -14,34 +14,34 @@ module.exports = function(eleventyConfig) {
     author: "Sarah L. Fossheim"
   });
   eleventyConfig.addCollection("resources", collection => {
-    return collection.getFilteredByGlob('resources/*/*.md').sort((a, b) => {
+    return collection.getFilteredByGlob('library/*/*.md').sort((a, b) => {
       return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
     });
   });
   eleventyConfig.addCollection("books", collection => {
-    return collection.getFilteredByGlob('resources/books/*.md').sort((a, b) => {
+    return collection.getFilteredByGlob('library/books/*.md').sort((a, b) => {
       return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
     });
   });
   eleventyConfig.addCollection("articles", collection => {
-    return collection.getFilteredByGlob('resources/articles/*.md').sort((a, b) => {
+    return collection.getFilteredByGlob('library/articles/*.md').sort((a, b) => {
       return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
     });
   });
   eleventyConfig.addCollection("tools", collection => {
-    return collection.getFilteredByGlob('resources/tools/*.md').sort((a, b) => {
+    return collection.getFilteredByGlob('library/tools/*.md').sort((a, b) => {
       return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
     });
   });
   eleventyConfig.addCollection("courses", collection => {
-    return collection.getFilteredByGlob('resources/courses/*.md').sort((a, b) => {
+    return collection.getFilteredByGlob('library/courses/*.md').sort((a, b) => {
       return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
     });
   });
   eleventyConfig.addCollection("other", collection => {
-    let other = collection.getFilteredByGlob('resources/*/*.md');
+    let other = collection.getFilteredByGlob('library/*/*.md');
     other = other.filter((resource) => {
-      let category = resource.filePathStem.split("/resources/")[1].split("/")[0];
+      let category = resource.filePathStem.split("/library/")[1].split("/")[0];
       return !["books", "articles", "courses", "tools"].includes(category);
     }).sort((a, b) => {
       return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
@@ -51,7 +51,7 @@ module.exports = function(eleventyConfig) {
 
 
   eleventyConfig.addCollection("a11y", collection => {
-    let a11y = collection.getFilteredByGlob('resources/*/*.md');
+    let a11y = collection.getFilteredByGlob('library/*/*.md');
     a11y = a11y.filter((resource) => {
       return resource.data.categories
        && (resource.data.categories.includes("a11y")
@@ -63,7 +63,7 @@ module.exports = function(eleventyConfig) {
     return a11y;
   });
   eleventyConfig.addCollection("biasai", collection => {
-    let biasai = collection.getFilteredByGlob('resources/*/*.md');
+    let biasai = collection.getFilteredByGlob('library/*/*.md');
     
     biasai = biasai.filter((resource) => {
       return resource.data.categories
@@ -99,7 +99,7 @@ module.exports = function(eleventyConfig) {
     return biasai;
   });
   eleventyConfig.addCollection("inclusive", collection => {
-    let inclusive = collection.getFilteredByGlob('resources/*/*.md');
+    let inclusive = collection.getFilteredByGlob('library/*/*.md');
     inclusive = inclusive.filter((resource) => {
       return resource.data.categories
        && (resource.data.categories.includes("inclusive design")
@@ -130,7 +130,7 @@ module.exports = function(eleventyConfig) {
     return inclusive;
   });
   eleventyConfig.addCollection("queer", collection => {
-    let queer = collection.getFilteredByGlob('resources/*/*.md');
+    let queer = collection.getFilteredByGlob('library/*/*.md');
     queer = queer.filter((resource) => {
       return resource.data.categories
        && (resource.data.categories.includes("queer")
@@ -148,7 +148,7 @@ module.exports = function(eleventyConfig) {
     return queer;
   });
   eleventyConfig.addCollection("race", collection => {
-    let race = collection.getFilteredByGlob('resources/*/*.md');
+    let race = collection.getFilteredByGlob('library/*/*.md');
     race = race.filter((resource) => {
       return resource.data.categories
        && (resource.data.categories.includes("race")

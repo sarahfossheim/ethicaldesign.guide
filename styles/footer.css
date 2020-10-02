@@ -9,7 +9,6 @@ footer .credits {
     padding-top: 1rem;
     background-color: var(--background);
     display: block;
-    width: 100vw;
     margin-top: 5rem;
 }
 
@@ -92,6 +91,7 @@ footer #revue-embed form input[type="submit"] {
     border-radius: 3px;
     transition: 0.3s background, 0.3s color;
     -webkit-appearance: none;
+    cursor: pointer;
 }
 
 footer #revue-embed form input[type="submit"]:hover {
