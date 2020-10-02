@@ -1,8 +1,9 @@
 ---
 layout: page.liquid
-pageTitle: "How to submit a new resource?"
 pageId: "submit"
 ---
+
+# How to submit a new resource?
 
 I will regularly update this directory with new resources. If you see something that's not here (yet) and should be here, you can do so yourself through GitHub. You'll need a GitHub account and limited knowledge of git ([find out how to get started]()), but no programming skills are required.
 

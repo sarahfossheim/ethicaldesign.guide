@@ -103,8 +103,8 @@ main pre code {
 .col-2 {
     width: 100%;
     display: grid;
-    grid-template-columns: 16rem 1fr;
-    column-gap: 1rem;
+    grid-template-columns: 17rem 1fr;
+    column-gap: 5rem;
 }
 
 .empty-col-2 {
@@ -159,14 +159,14 @@ main pre code {
         grid-template-columns: 1fr;
         row-gap: 1rem;
     }
-}
-
-@media screen and (max-width: 750px) {
     body {
         background-image: linear-gradient(var(--contrast) 15%, var(--contrast) 85%);
         background-size: 100% 100%;
         background-attachment: scroll;
     }
+}
+
+@media screen and (max-width: 800px) {
 
     main {
         margin-top: 10rem;

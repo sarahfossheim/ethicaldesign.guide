@@ -7,8 +7,14 @@
                     <span class="capitalize">{{resource.data.type}}</span> about tags.
                     <br />
                     By 
-                    {% for author in resource.data.authors %}
-                        <span>{{author}}</span>, 
+                    {% assign authors = resource.data.authors.length | minus: 1 %}
+                    {% for i in (0..authors) %}
+                        {% assign lastId = authors %}
+                        {% assign currentId = i | plus: "" %}
+                        {% if currentId == lastId and authors != "0" %}
+                            and
+                        {% endif %}
+                        {{resource.data.authors[i]}}{% if i < lastId %},{% else %}.{% endif %} 
                     {% endfor %}
                     
                 </span>

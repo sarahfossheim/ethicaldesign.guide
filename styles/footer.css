@@ -17,6 +17,7 @@ footer .credits p {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.25rem;
 }
 
 footer .credits a {
@@ -121,7 +122,7 @@ footer .info p:nth-child(2n) {
 }
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
     footer .info {
         grid-template-columns: 1fr;
         margin-bottom: -3rem;
@@ -143,11 +144,7 @@ footer .info p:nth-child(2n) {
     }
 
     footer .credits {
-        padding-bottom: 2.5rem;
-    }
-
-    footer .credits p{
-        font-size: 0.75rem;
+        padding-bottom: 3rem;
     }
 
     footer .info p:first-child, footer .info p:nth-child(2n)  {
