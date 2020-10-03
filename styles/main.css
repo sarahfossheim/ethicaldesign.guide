@@ -51,11 +51,11 @@ main .block h2 {
     padding-left: 0.5rem;
 }
 
-main .block p {
+p {
     line-height: 1.5rem;
 }
 
-main .block p a {
+p a {
     color: var(--text-normal);
     text-decoration-style: dotted;
     transition: 0.25s background;
