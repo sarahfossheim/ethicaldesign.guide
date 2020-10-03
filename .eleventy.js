@@ -179,11 +179,41 @@ module.exports = function(eleventyConfig) {
     })
     return categoryList;
   });
-  eleventyConfig.addFilter('consolePrint', content => {
+  eleventyConfig.addFilter("consolePrint", content => {
     console.log(content);
   });
-  eleventyConfig.addFilter('removeSpaces', content => {
+  eleventyConfig.addFilter("removeSpaces", content => {
     return content.replace(" ", "");
+  });
+  eleventyConfig.addFilter("getDescription", content => {
+    let description = content.type + " about ";
+    content.categories.forEach((category, index) => {
+      description += category;
+      if (index <= content.categories.length - 2) {
+        description += ", ";
+        if (index === content.categories.length - 2) {
+          description += "and "
+        }
+      } else {
+        description += ".";
+      }
+    });
+    return description;
+  });
+  eleventyConfig.addFilter("getAuthors", content => {
+    let authors = "By ";
+    content.authors.forEach((author, index) => {
+      authors += author;
+      if (index <= content.authors.length - 2) {
+        authors += ", ";
+        if (index === content.authors.length - 2) {
+          authors += "and "
+        }
+      } else {
+        authors += ".";
+      }
+    });
+    return authors;
   });
   return {
     passthroughFileCopy: true

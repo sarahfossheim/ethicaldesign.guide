@@ -3,30 +3,8 @@
         {% for resource in pagination.items %}
             <li class="resource">
                 <a href="{{resource.data.link}}"><span>{{resource.data.title}}</span></a>
-                <span class="credits">
-                    <span class="capitalize">{{resource.data.type}}</span>
-                    about
-                    {% assign categories = resource.data.categories.length | minus: 1 %}
-                    {% for i in (0..categories) %}
-                        {% assign lastId = categories %}
-                        {% assign currentId = i | plus: "" %}
-                        {% if currentId == lastId and categories != "0" %}
-                            and
-                        {% endif %}
-                        {{resource.data.categories[i]}}{% if i < lastId %},{% else %}.{% endif %} 
-                    {% endfor %}
-                    <br />
-                    By 
-                    {% assign authors = resource.data.authors.length | minus: 1 %}
-                    {% for i in (0..authors) %}
-                        {% assign lastId = authors %}
-                        {% assign currentId = i | plus: "" %}
-                        {% if currentId == lastId and authors != "0" %}
-                            and
-                        {% endif %}
-                        {{resource.data.authors[i]}}{% if i < lastId %},{% else %}.{% endif %} 
-                    {% endfor %}
-                </span>
+                <span class="capitalize">{{resource.data | getDescription}}</span>
+                <span>{{resource.data | getAuthors}}</span>
             </li>
         {% endfor %}
     </ul>

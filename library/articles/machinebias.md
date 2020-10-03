@@ -3,7 +3,8 @@ title: "Machine Bias"
 authors:
     - "Julia Angwin"
     - "Jeff Larson"
-    - "Surya Mattu and Lauren Kirchner"
+    - "Surya Mattu"
+    - "Lauren Kirchner"
     - "ProPublica"
 type: "article"
 categories: 

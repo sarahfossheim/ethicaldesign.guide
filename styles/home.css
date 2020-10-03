@@ -106,10 +106,8 @@
     border-color: var(--text-normal);
 }
 
-.resource-list .resource .credits {
-    font-size: 0.9rem;
-    line-height: 0.75rem;
-    z-index: 1;
+.resource-list .resource span {
+    display: block;
 }
 
 .table-navigation {
