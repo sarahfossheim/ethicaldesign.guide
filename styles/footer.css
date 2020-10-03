@@ -28,6 +28,10 @@ footer .credits a:hover {
     color: var(--background);
 }
 
+footer #revue-embed p a:hover {
+    background-color: var(--background);
+}
+
 footer #revue-embed {
     width: 40rem;
     max-width: 85vw;

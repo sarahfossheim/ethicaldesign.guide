@@ -61,7 +61,7 @@ p a {
     transition: 0.25s background;
 }
 
-main .block:not(#resources) p a:hover {
+:not(#resources) main p a:hover {
     background-color: var(--background);
 }
 
