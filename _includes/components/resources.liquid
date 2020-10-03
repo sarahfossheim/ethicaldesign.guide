@@ -3,7 +3,7 @@
         {% for resource in pagination.items %}
             <li class="resource">
                 <a href="{{resource.data.link}}"><span>{{resource.data.title}}</span></a>
-                <span class="capitalize">{{resource.data | getDescription}}</span>
+                <span>{{resource.data | getDescription}}</span>
                 <span>{{resource.data | getAuthors}}</span>
             </li>
         {% endfor %}

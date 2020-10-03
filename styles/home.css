@@ -110,6 +110,10 @@
     display: block;
 }
 
+.resource-list .resource span:first-letter {
+    text-transform: capitalize;
+}
+
 .table-navigation {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -120,11 +120,6 @@ main pre code {
     padding-right: 5rem;
 }
 
-.capitalize {
-    text-transform: capitalize;
-}
-
-
 .bmc-button img{ 
     height: 1.5rem;
     width: 1.5rem;
