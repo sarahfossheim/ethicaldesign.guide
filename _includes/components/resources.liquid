@@ -3,7 +3,7 @@
     <ul class="resource-list">
         {% for resource in pagination.items %}
             <li class="resource">
-                <h3><a href="{{resource.data.link}}"><span>{{resource.data.title}}</span></a></h3>
+                <p><a href="{{resource.data.link}}"><span>{{resource.data.title}}</span></a></p>
                 <p>{{resource.data | getDescription}}</p>
                 <p>{{resource.data | getAuthors}}</p>
             </li>
