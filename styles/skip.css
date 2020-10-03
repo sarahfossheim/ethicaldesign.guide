@@ -1,0 +1,25 @@
+.skip-to-content {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    transform: translateY(-100%);
+}
+
+.skip-to-content:focus {
+    top: 3rem;
+    left: 3rem;
+    transform: translateY(0%);
+    border: 2px solid var(--text-normal);
+    font-family: "SyneBold";
+    padding: 0.5rem;
+    color: var(--text-normal);
+    background-color: var(--background);
+    z-index: 2;
+}
+
+@media screen and (max-width: 1000px) {
+    .skip-to-content:focus {
+        top: 6rem;
+        left: 1rem;
+    }
+}

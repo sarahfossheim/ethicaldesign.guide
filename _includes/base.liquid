@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="/styles/background.css">
         <link rel="stylesheet" href="/styles/header.css">
         <link rel="stylesheet" href="/styles/submit.css">
+        <link rel="stylesheet" href="/styles/skip.css">
 
         <!-- {% capture css %}
             {% include ../styles/fonts.css %}
@@ -28,13 +29,16 @@
     </head>
 
     <body id={{pageId}}>
-        
+        {{pageId | log}}
+        {% if pageId == "home" %}
+            {% include components/skip.liquid, title: "Skip to resources", link: "library" %}
+        {% else %}
+            {% include components/skip.liquid, title: "Skip to content", link: "main" %}
+        {% endif %}
         {% include components/header.liquid %}
-        
-        <main>
+        <main id="main">
             {{content}}
         </main>
-
         {% include components/footer.liquid %}
     </body>
 </html>
