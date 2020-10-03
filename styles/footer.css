@@ -126,7 +126,7 @@ footer .info p:nth-child(2n) {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     footer .info {
         grid-template-columns: 1fr;
         margin-bottom: -3rem;
@@ -153,5 +153,21 @@ footer .info p:nth-child(2n) {
 
     footer .info p:first-child, footer .info p:nth-child(2n)  {
         text-align: center;
+    }
+
+    footer #revue-embed {
+        padding: 3rem 1.5rem;
+    
+        background-image: linear-gradient(white, white),
+            repeating-linear-gradient(
+            45deg,
+            var(--background),
+            var(--background) 5px,
+            var(--text-normal) 5px,
+            var(--text-normal) 9px 
+            );
+        background-size: 100% 100%, 100% 100%;
+        background-size: calc(100% - 0.5rem) calc(100% - 0.5rem), 100% 100%;
+        background-position: 0.25rem 0.25rem, 0 0;
     }
 }
