@@ -36,22 +36,16 @@
 #main-header nav ul li a {
     color: var(--text-normal);
     text-decoration: none;
-    background-image: linear-gradient(var(--accent-2), var(--accent-2)),
-        linear-gradient(var(--text-normal), var(--text-normal)),
-        linear-gradient(
-            transparent 40%,
-            var(--text-normal) 40% 62.5%,
-            transparent 62.5%
-        );
-    background-size: 0 0, 0 0, 0 100%;
+    background-image: linear-gradient(var(--text-normal), var(--text-normal));
+    background-size: 0 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    transition: 0.25s background;
+    transition: 0.15s background;
 }
 
 #main-header nav ul li a:hover {
-    background-size: 0 0, 0 0, 100% 100%;
-    animation: link-hover 0.25s 0.10s forwards, link-hover-2 0.25s 4.25s forwards, link-hover-3 0.15s 10s forwards;
+    background-size: 0 100%;
+    animation: link-hover 0.15s forwards;
 }
 
 #main-header nav ul li a:focus {
@@ -109,33 +103,11 @@
 
 @keyframes link-hover {
     0% {
-        background-size: 0 0, 100% 0, 100% 100%;
+        background-size: 100% 0;
         color: var(--text-normal);
     }
     100% {
-        background-size: 0 0, 100% 100%, 100% 100%;
+        background-size: 100% 100%;
         color: var(--background)
-    }
-}
-
-@keyframes link-hover-2 {
-    0% {
-        background-size: 100% 0, 100% 100%, 100% 100%;
-        color: var(--background);
-    }
-    100% {
-        background-size: 100% 100%, 100% 100%, 100% 100%;
-        color: var(--selection-text);
-    }
-}
-
-@keyframes link-hover-3 {
-    0% {
-        background-size: 100% 100%, 100% 100%, 100% 100%;
-        color: var(--selection-text);
-    }
-    100% {
-        background-size: 100% 0%, 100% 100%, 100% 100%;
-        color: var(--background);
     }
 }
