@@ -58,9 +58,12 @@
     border: 2px solid var(--text-normal);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
     #main-header {
         position: absolute;
+        background-color: rgba(255,255,255,0);
+        border-top: 0.25rem solid var(--background);
+        padding-top: 0.5rem;
     }
 
     #main-header nav ul.internal {
@@ -134,13 +137,5 @@
     100% {
         background-size: 100% 0%, 100% 100%, 100% 100%;
         color: var(--background);
-    }
-}
-
-@media screen and (max-width: 750px) {
-    #main-header {
-        background-color: var(--contrast);
-        border-top: 0.25rem solid var(--background);
-        padding-top: 0.5rem;
     }
 }
