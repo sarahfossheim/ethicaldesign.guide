@@ -29,7 +29,7 @@
     font-family: "SyneBold", "Archivo Black", "Archivo", sans-serif;
 }
 
-#main-header nav ul.internal li {
+#main-header nav ul.internal li:not(:first-child) {
     text-transform: uppercase;
 }
 
@@ -71,6 +71,9 @@
 
     #main-header nav ul.internal li {
         text-align: left;
+    }
+
+    #main-header nav ul.internal li:not(:first-child) {
         text-transform: capitalize;
     }
 
