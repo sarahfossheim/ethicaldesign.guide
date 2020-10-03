@@ -3,15 +3,20 @@
     padding-left: 0.75rem;
 }
 
-#resources {
-    margin-top: 4rem;
-}
-
-.filter-wrapper p {
+#home main h2 {
+    font-family: "Archivo", sans-serif;
+    border: none;
+    padding: 0;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-size: 0.75rem;
-    margin-bottom: 0.5rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+#resources {
+    margin-top: 4rem;
 }
 
 .filter-wrapper .filters {
@@ -106,11 +111,7 @@
     border-color: var(--text-normal);
 }
 
-.resource-list .resource span {
-    display: block;
-}
-
-.resource-list .resource span:first-letter {
+.resource-list .resource p:first-letter {
     text-transform: capitalize;
 }
 

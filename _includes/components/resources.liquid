@@ -1,10 +1,11 @@
-<section>
+<section class="library">
+    <h2>Resources</h2>
     <ul class="resource-list">
         {% for resource in pagination.items %}
             <li class="resource">
-                <a href="{{resource.data.link}}"><span>{{resource.data.title}}</span></a>
-                <span>{{resource.data | getDescription}}</span>
-                <span>{{resource.data | getAuthors}}</span>
+                <h3><a href="{{resource.data.link}}"><span>{{resource.data.title}}</span></a></h3>
+                <p>{{resource.data | getDescription}}</p>
+                <p>{{resource.data | getAuthors}}</p>
             </li>
         {% endfor %}
     </ul>
