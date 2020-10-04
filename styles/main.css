@@ -149,6 +149,10 @@ main pre code {
     color: var(--contrast);
 }
 
+ins {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1000px) {
     .col-2 {
         grid-template-columns: 1fr;
