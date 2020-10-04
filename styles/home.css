@@ -95,6 +95,7 @@
 
 .resource-list .resource a:hover {
     text-decoration: underline;
+    background-color: transparent;
 } 
 
 .resource-list .resource:hover {

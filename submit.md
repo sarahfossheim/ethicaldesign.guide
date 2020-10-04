@@ -5,11 +5,11 @@ pageId: "submit"
 
 # How to submit a new resource
 
-Currently the only way to suggest a resource is through [GitHub](https://github.com/sarahfossheim/ethicaldesign.guide). You'll need an account, and optionally basic [knowledge of git](https://guides.github.com/introduction/git-handbook/), but no programming skills are required.
+Currently the only way to submit a resource is through [GitHub](https://github.com/sarahfossheim/ethicaldesign.guide). You'll need an account, and optionally basic [knowledge of git](https://guides.github.com/introduction/git-handbook/), but no programming skills are required.
 
 ## Submission guidelines
 
-Before adding any resource, make sure it actually belongs in this directory. You can look at what's already in our [library](/) to get an idea of some of the topics that are covered. It can be a book, article, tool, podcast, or any other format. But it should provide education, awareness, or guidance around making tech more ethical and reducing harm.
+Before suggesting a resource, make sure it actually belongs in this directory. You can look at what's already in our [library](/) to get an idea of some of the topics that are covered. It can be a book, article, tool, podcast, or any other format. But it should provide education, awareness, or guidance around making tech more ethical and reducing harm.
 
 We do not accept racism, homophobia, transphobia, ableism, sexism, white supremacy, anti-semitism, or any other form of bigotry. Resources or authors that fit those criteria will be rejected and removed.
 
