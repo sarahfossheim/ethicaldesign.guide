@@ -5,7 +5,7 @@ pageId: "about"
 
 # About the Ethical Design Guide
 
-Tech is all around us, developing fast, and not going away. Which is why ethics should be a part of the design and engineering curriculum, and a focus for everyone working in the tech and design industry.
+Tech is all around us, developing fast, and not going away. Which is why ethics should be a part of the design and engineering curriculum, and a focus for everyone working in the industry.
 
 Without it, we risk creating products that cause harm, often against people from minoritized groups, who already face a lot of injustice. Think of the predictive policing software that’s biased against Black people, products that reinforce gender stereotypes or exclude non-binary folks, or all the websites that are not accessible.
 
@@ -15,7 +15,6 @@ Ethical Design Guide is made to share resources on how to create ethical product
 
 If you find any bugs or have feature requests, you can open an issue on GitHub, and use one of the following labels:
 
-- **Feature**: Requests and suggestions for new features
 - **Accessibility**: Accessibility bugs and improvements
 - **Bug**: Something doesn’t seem to be working
 - **Feature**: Requests and suggestions for new features
@@ -33,6 +32,6 @@ If you see a resource that shouldn’t be here or want to add one of your own, i
 
 ## About the creator
 
-[Sarah Fossheim](https://fossheim.io/) ([@liatrisbian](https://twitter.com/liatrisbian)) is a multidisciplinary developer and designer focused on creating inclusive and accessible products. They created Ethical Design Guide in <del>August</del> <ins>October</ins> 2020, with the goal of making it easier to create more ethical products.
+[Sarah Fossheim](https://fossheim.io/) ([@liatrisbian](https://twitter.com/liatrisbian)) is a multidisciplinary developer and designer focused on creating inclusive and accessible products. They created Ethical Design Guide in October 2020, with the goal of making it easier to create more ethical products.
 
 It originally started with a Notion document in June 2020, but was moved over to its own self-hosted platform in fall. This allows others to submit resources in a supervised way without allowing trolls to misuse the functionality, by creating a pull request on GitHub.

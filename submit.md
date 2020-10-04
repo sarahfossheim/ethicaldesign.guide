@@ -5,19 +5,23 @@ pageId: "submit"
 
 # How to submit a new resource
 
-I will regularly update this directory with new resources. If you see something that's not here (yet) and should be here, you can do so yourself through [GitHub](https://github.com/sarahfossheim/ethicaldesign.guide). You'll need a GitHub account and limited [knowledge of git](https://guides.github.com/introduction/git-handbook/), but no programming skills are required.
+Currently the only way to suggest a resource is through [GitHub](https://github.com/sarahfossheim/ethicaldesign.guide). You'll need an account, and optionally basic [knowledge of git](https://guides.github.com/introduction/git-handbook/), but no programming skills are required.
 
 ## Submission guidelines
 
-Before adding any resource, make sure it actually belongs in this directory. The resource should be about accessibility, inclusivity, social justice, ethics, human rights, or politics in tech. It can focus on either the design, technological or human aspect, and of any skill level or about any technology or design practice. It's also ok to link to paid courses, books or tools.
+Before adding any resource, make sure it actually belongs in this directory. You can look at what's already in our [library](/) to get an idea of some of the topics that are covered. It can be a book, article, tool, podcast, or any other format. But it should provide education, awareness, or guidance around making tech more ethical and reducing harm.
 
-Don't submit articles that are about design or technology in general, don't submit affiliate links, articles behind paywalls or sponsored posts. When it comes to books, avoid linking to Amazon unless there's no other alternative.
+We do not accept racism, homophobia, transphobia, ableism, sexism, white supremacy, anti-semitism, or any other form of bigotry. Resources or authors that fit those criteria will be rejected and removed.
 
-I do not accept racism, homophobia, transphobia, ableism, sexism, white supremacy, anti-semitism, or any other form of bigotry. Resources or authors that fit those criteria will be rejected and removed.
+## Suggesting a resource through GitHub issues
 
-## Adding a resource
+The easiest way to suggest a new resource is by [creating an issue](https://github.com/sarahfossheim/ethicaldesign.guide/issues/new) on GitHub and adding the `resource` label. The title should be the title of the resource, and the description should at least contain a link, and optional context.
 
-First, you'll need to find the project on GitHub and fork it. In the `resources` folder of your copy, you can create a new markdown file (ending in `.md`) under any of the fitting type folders. The filename should be a shortened version of the resource title, and not contain spaces, eg: `weaponsofmathdestruction.md`.
+## Alternative: Submitting a resource by creating a pull request
+
+First, you'll need to find the project on GitHub and fork it.
+
+In the `resources` folder of your copy, you can create a new markdown file (ending in `.md`) under any of the fitting type folders. The filename should be a shortened version of the resource title, and not contain spaces, eg: `weaponsofmathdestruction.md`.
 
 Next, copy the following into the file, and fill in the blanks:
 
@@ -29,12 +33,11 @@ authors:
 type:
 categories:
     -
-    -
 link:
 ---
 ```
 
-Optionally, a short description can be added at the end of the file as well.
+An optional short description can be added at the end of the file as well. 
 
 In case of the book Weapons of Math Destruction by Cathy O'Neil, the path of our file would be `resources/books/weaponsofmathdestruction.md`, with the following content:
 
@@ -44,7 +47,7 @@ title: Weapons of Math Destruction
 authors:
     - Cathy O'Neil
 type: book
-categories: 
+categories:
     - race
     - algorithms
     - artificial intelligence
@@ -55,7 +58,7 @@ link: https://www.goodreads.com/book/show/28186015-weapons-of-math-destruction?a
 A former Wall Street quant sounds an alarm on the mathematical models that pervade modern life — and threaten to rip apart our social fabric.
 ```
 
-After this is done, you'll need to commit and push your changes, and create a pull request. The title of the pull request should include what change is made _(eg. "Added the book Weapons of Math Destruction")_. If any context is necessary, please include it in the body of the pull request. The pull request should be labeled as `new resource`.
+After this is done, you'll need to commit and push your changes, and create a pull request. The title of the pull request should include what change is made _(eg. "Added the book Weapons of Math Destruction")_. If any context is necessary, please include it in the body of the pull request. The pull request should be labeled with `resources`.
 
 ## Removing a resource
 
