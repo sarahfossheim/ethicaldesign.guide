@@ -14,38 +14,26 @@ module.exports = function(eleventyConfig) {
     author: "Sarah L. Fossheim"
   });
   eleventyConfig.addCollection("resources", collection => {
-    return collection.getFilteredByGlob('library/*/*.md').sort((a, b) => {
-      return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
-    });
+    return collection.getFilteredByGlob('library/*/*.md').reverse();
   });
   eleventyConfig.addCollection("books", collection => {
-    return collection.getFilteredByGlob('library/books/*.md').sort((a, b) => {
-      return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
-    });
+    return collection.getFilteredByGlob('library/books/*.md').reverse();
   });
   eleventyConfig.addCollection("articles", collection => {
-    return collection.getFilteredByGlob('library/articles/*.md').sort((a, b) => {
-      return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
-    });
+    return collection.getFilteredByGlob('library/articles/*.md').reverse();
   });
   eleventyConfig.addCollection("tools", collection => {
-    return collection.getFilteredByGlob('library/tools/*.md').sort((a, b) => {
-      return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
-    });
+    return collection.getFilteredByGlob('library/tools/*.md').reverse();
   });
   eleventyConfig.addCollection("courses", collection => {
-    return collection.getFilteredByGlob('library/courses/*.md').sort((a, b) => {
-      return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
-    });
+    return collection.getFilteredByGlob('library/courses/*.md').reverse();
   });
   eleventyConfig.addCollection("other", collection => {
     let other = collection.getFilteredByGlob('library/*/*.md');
     other = other.filter((resource) => {
       let category = resource.filePathStem.split("/library/")[1].split("/")[0];
       return !["books", "articles", "courses", "tools"].includes(category);
-    }).sort((a, b) => {
-      return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
-    });
+    }).reverse();
     return other;
   });
 
@@ -57,9 +45,7 @@ module.exports = function(eleventyConfig) {
        && (resource.data.categories.includes("a11y")
         || resource.data.categories.includes("accessibility")
         || resource.data.categories.includes("disabilities"));
-    }).sort((a, b) => {
-      return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
-    });
+    }).reverse();
     return a11y;
   });
   eleventyConfig.addCollection("biasai", collection => {
@@ -76,7 +62,7 @@ module.exports = function(eleventyConfig) {
               || resource.data.categories.includes("transphobia")
               || resource.data.categories.includes("gender")
               || resource.data.categories.includes("queer")
-              || resource.data.categories.includes("lgbtqia+")
+              || resource.data.categories.includes("LGBTQIA+")
               || resource.data.categories.includes("sexuality")
               || resource.data.categories.includes("sexism")
               || resource.data.categories.includes("biased")
@@ -93,9 +79,7 @@ module.exports = function(eleventyConfig) {
           || resource.data.categories.includes("bias in ai")
         )
        );
-    }).sort((a, b) => {
-      return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
-    });
+    }).reverse();
     return biasai;
   });
   eleventyConfig.addCollection("inclusive", collection => {
@@ -124,9 +108,7 @@ module.exports = function(eleventyConfig) {
           )
           && resource.data.categories.includes("design")
         ));
-    }).sort((a, b) => {
-      return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
-    });
+    }).reverse();
     return inclusive;
   });
   eleventyConfig.addCollection("queer", collection => {
@@ -135,16 +117,14 @@ module.exports = function(eleventyConfig) {
       return resource.data.categories
        && (resource.data.categories.includes("queer")
         || resource.data.categories.includes("queer issues")
-        || resource.data.categories.includes("lgbtqia+")
+        || resource.data.categories.includes("LGBTQIA+")
         || resource.data.categories.includes("gay")
         || resource.data.categories.includes("trans")
         || resource.data.categories.includes("transgender")
         || resource.data.categories.includes("non-binary")
         || resource.data.categories.includes("gender")
         || resource.data.categories.includes("sexuality"));
-    }).sort((a, b) => {
-      return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
-    });
+    }).reverse();
     return queer;
   });
   eleventyConfig.addCollection("race", collection => {
@@ -158,9 +138,7 @@ module.exports = function(eleventyConfig) {
         || resource.data.categories.includes("anti-racist")
         || resource.data.categories.includes("racial justice")
         || resource.data.categories.includes("racial inequality"));
-    }).sort((a, b) => {
-      return a.data.title > b.data.title ? 1 : a.data.title < b.data.title ? -1 : 0;
-    });
+    }).reverse();
     return race;
   });
 
