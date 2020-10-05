@@ -29,7 +29,6 @@
     </head>
 
     <body id={{pageId}}>
-        {{pageId | log}}
         {% if pageId == "home" %}
             {% include components/skip.liquid, title: "Skip to resources", link: "library" %}
         {% else %}
