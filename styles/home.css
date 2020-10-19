@@ -124,8 +124,7 @@
 
 .table-navigation p a {
     color: var(--text-normal);
-    font-family: "Casta-ExtraBoldExpanded", "Archivo Black", "Archivo", sans-serif;
-    font-family: "SyneExtra";
+    font-family: "SyneExtra", "Archivo", sans-serif;
     text-decoration: none;
     font-size: 1.25rem;
 }

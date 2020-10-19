@@ -26,7 +26,7 @@
     text-align: center;
     list-style-type: none;
     font-size: 1rem;
-    font-family: "SyneBold", "Archivo Black", "Archivo", sans-serif;
+    font-family: "SyneBold", "Archivo", sans-serif;
 }
 
 #main-header nav ul.internal li:not(:first-child) {
