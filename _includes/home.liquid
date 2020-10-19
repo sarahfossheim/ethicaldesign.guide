@@ -20,3 +20,10 @@ pageId: "home"
 <section id="resources" class="block col-2">
     {{content}}
 </section>
+
+{% capture css %}
+    {% include ../styles/home.css %}
+{% endcapture %}
+<style>
+    {{css | safe}}
+</style>

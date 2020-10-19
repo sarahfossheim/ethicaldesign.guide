@@ -36,3 +36,10 @@
         </p>
     </section>
 </footer>
+
+{% capture css %}
+    {% include ../styles/footer.css %}
+{% endcapture %}
+<style>
+    {{css | safe}}
+</style>
