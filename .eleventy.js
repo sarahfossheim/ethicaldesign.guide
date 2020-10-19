@@ -1,5 +1,6 @@
 const pluginSEO = require("eleventy-plugin-seo");
 const xmlFiltersPlugin = require('eleventy-xml-plugin');
+const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('styles');
@@ -12,6 +13,9 @@ module.exports = function(eleventyConfig) {
     description: "TODO",
     url: "TODO",
     author: "Sarah L. Fossheim"
+  });
+  eleventyConfig.addFilter("minify", css => {
+    return new CleanCSS({}).minify(css).styles;
   });
   eleventyConfig.addCollection("resources", collection => {
     return collection.getFilteredByGlob('library/*/*.md').reverse();
