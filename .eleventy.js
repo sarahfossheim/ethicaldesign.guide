@@ -18,26 +18,38 @@ module.exports = function(eleventyConfig) {
     return new CleanCSS({}).minify(css).styles;
   });
   eleventyConfig.addCollection("resources", collection => {
-    return collection.getFilteredByGlob('library/*/*.md').reverse();
+    return collection.getFilteredByGlob('library/*/*.md').sort((a, b) => {
+      return b.date - a.date;
+    });
   });
   eleventyConfig.addCollection("books", collection => {
-    return collection.getFilteredByGlob('library/books/*.md').reverse();
+    return collection.getFilteredByGlob('library/books/*.md').sort((a, b) => {
+      return b.date - a.date;
+    });
   });
   eleventyConfig.addCollection("articles", collection => {
-    return collection.getFilteredByGlob('library/articles/*.md').reverse();
+    return collection.getFilteredByGlob('library/articles/*.md').sort((a, b) => {
+      return b.date - a.date;
+    });
   });
   eleventyConfig.addCollection("tools", collection => {
-    return collection.getFilteredByGlob('library/tools/*.md').reverse();
+    return collection.getFilteredByGlob('library/tools/*.md').sort((a, b) => {
+      return b.date - a.date;
+    });
   });
   eleventyConfig.addCollection("courses", collection => {
-    return collection.getFilteredByGlob('library/courses/*.md').reverse();
+    return collection.getFilteredByGlob('library/courses/*.md').sort((a, b) => {
+      return b.date - a.date;
+    });
   });
   eleventyConfig.addCollection("other", collection => {
     let other = collection.getFilteredByGlob('library/*/*.md');
     other = other.filter((resource) => {
       let category = resource.filePathStem.split("/library/")[1].split("/")[0];
       return !["books", "articles", "courses", "tools"].includes(category);
-    }).reverse();
+    }).sort((a, b) => {
+      return b.date - a.date;
+    });
     return other;
   });
 
@@ -48,8 +60,11 @@ module.exports = function(eleventyConfig) {
       return resource.data.categories
        && (resource.data.categories.includes("a11y")
         || resource.data.categories.includes("accessibility")
-        || resource.data.categories.includes("disabilities"));
-    }).reverse();
+        || resource.data.categories.includes("disabilities")
+        || resource.data.categories.includes("disabled"));
+    }).sort((a, b) => {
+      return b.date - a.date;
+    });
     return a11y;
   });
   eleventyConfig.addCollection("biasai", collection => {
@@ -83,7 +98,9 @@ module.exports = function(eleventyConfig) {
           || resource.data.categories.includes("bias in ai")
         )
        );
-    }).reverse();
+    }).sort((a, b) => {
+      return b.date - a.date;
+    });
     return biasai;
   });
   eleventyConfig.addCollection("inclusive", collection => {
@@ -108,11 +125,14 @@ module.exports = function(eleventyConfig) {
             || resource.data.categories.includes("accessible")
             || resource.data.categories.includes("accessibility")
             || resource.data.categories.includes("disabilities")
+            || resource.data.categories.includes("disabled")
             || resource.data.categories.includes("a11y")
           )
           && resource.data.categories.includes("design")
         ));
-    }).reverse();
+    }).sort((a, b) => {
+      return b.date - a.date;
+    });
     return inclusive;
   });
   eleventyConfig.addCollection("queer", collection => {
@@ -128,7 +148,9 @@ module.exports = function(eleventyConfig) {
         || resource.data.categories.includes("non-binary")
         || resource.data.categories.includes("gender")
         || resource.data.categories.includes("sexuality"));
-    }).reverse();
+    }).sort((a, b) => {
+      return b.date - a.date;
+    });
     return queer;
   });
   eleventyConfig.addCollection("race", collection => {
@@ -142,7 +164,9 @@ module.exports = function(eleventyConfig) {
         || resource.data.categories.includes("anti-racist")
         || resource.data.categories.includes("racial justice")
         || resource.data.categories.includes("racial inequality"));
-    }).reverse();
+    }).sort((a, b) => {
+      return b.date - a.date;
+    });
     return race;
   });
 
