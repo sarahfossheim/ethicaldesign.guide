@@ -15,6 +15,9 @@ module.exports = function(eleventyConfig) {
     author: "Sarah L. Fossheim",
     image: "https://ethicaldesign.guide/styles/img/shared.png",
     options: {
+      titleStyle: "minimalistic",
+      titleDivider: "|",
+      imageWithBaseUrl: true,
       twitterCardType: "summary_large_image"
     }
   });
