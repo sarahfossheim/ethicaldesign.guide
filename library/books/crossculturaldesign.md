@@ -7,4 +7,5 @@ categories:
     - "design"
     - "inclusion"
 link: "https://abookapart.com/products/cross-cultural-design"
+date: "2020-12-24"
 ---

@@ -9,4 +9,5 @@ categories:
     - "inclusion"
     - "diversity"
 link: "https://affecttheverb.com/collection/"
+date: "2020-12-25"
 ---

@@ -9,4 +9,5 @@ categories:
     - "AI"
     - "social justice"
 link: "https://lighthouse3.com/newsletter/"
+date: "2020-12-26"
 ---

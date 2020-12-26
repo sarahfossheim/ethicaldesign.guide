@@ -5,4 +5,5 @@ authors:
 categories: 
     - "accessibility"
 link: "https://www.a11yproject.com/checklist/"
+date: "2020-12-25"
 ---

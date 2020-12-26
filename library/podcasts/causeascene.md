@@ -9,4 +9,5 @@ categories:
     - "bias"
     - "algorithms"
 link: "https://hashtagcauseascene.com/podcast/"
+date: "2020-12-26"
 ---

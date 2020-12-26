@@ -8,4 +8,5 @@ categories:
     - "inclusive design" 
     - "user experience"
 link: "https://alistapart.com/article/trans-inclusive-design/"
+date: "2020-12-25"
 ---

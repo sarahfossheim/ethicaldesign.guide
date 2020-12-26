@@ -12,4 +12,5 @@ categories:
     - "racism"
     - "bias"
 link: "https://www.a11yproject.com/checklist/"
+date: "2020-12-26"
 ---

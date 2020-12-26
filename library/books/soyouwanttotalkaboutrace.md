@@ -5,4 +5,5 @@ authors:
 categories: 
     - "race"
 link: "https://www.sealpress.com/titles/ijeoma-oluo/so-you-want-to-talk-about-race/9781580056779/?utm_expid=.OyywKgKNQfKo0ZgN1WBZtg.0"
+date: "2020-12-26"
 ---

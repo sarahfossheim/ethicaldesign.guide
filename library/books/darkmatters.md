@@ -6,4 +6,5 @@ categories:
     - "racism"
     - "surveillance"
 link: "https://www.dukeupress.edu/dark-matters"
+date: "2020-12-24"
 ---

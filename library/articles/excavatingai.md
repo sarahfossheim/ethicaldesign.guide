@@ -8,4 +8,5 @@ categories:
     - "algorithms"
     - "bias"
 link: "https://www.excavating.ai/"
+date: "2020-12-24"
 ---

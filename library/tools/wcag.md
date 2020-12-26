@@ -6,4 +6,5 @@ authors:
 categories: 
     - "accessibility"
 link: "https://www.w3.org/WAI/standards-guidelines/wcag/"
+date: "2020-12-24"
 ---

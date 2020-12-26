@@ -8,4 +8,5 @@ categories:
     - "gender"
     - "race"
 link: "https://wwnorton.com/books/Technically-Wrong/"
+date: "2020-12-25"
 ---

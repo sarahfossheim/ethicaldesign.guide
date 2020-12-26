@@ -6,4 +6,5 @@ categories:
     - "accessibility"
     - "data"
 link: "https://medium.com/nightingale/accessibility-is-at-the-heart-of-data-visualization-64a38d6c505b"
+date: "2020-12-26"
 ---

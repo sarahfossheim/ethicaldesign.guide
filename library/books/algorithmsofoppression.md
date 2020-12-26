@@ -9,4 +9,5 @@ categories:
     - "sexism"
     - "data science"
 link: "http://algorithmsofoppression.com/"
+date: "2020-12-26"
 ---

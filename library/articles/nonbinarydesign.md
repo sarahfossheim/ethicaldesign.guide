@@ -7,4 +7,5 @@ categories:
     - "LGBTQIA+"
     - "non-binary issues"
 link: "https://fossheim.io/writing/posts/non-binary-design/"
+date: "2020-12-25"
 ---

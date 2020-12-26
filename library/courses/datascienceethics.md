@@ -9,4 +9,5 @@ categories:
     - "technology"
     - "data science"
 link: "https://www.coursera.org/learn/data-science-ethics"
+date: "2020-12-24"
 ---

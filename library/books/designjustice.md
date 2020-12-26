@@ -9,4 +9,5 @@ categories:
     - "race"
     - "politics"
 link: "https://design-justice.pubpub.org"
+date: "2020-12-26"
 ---

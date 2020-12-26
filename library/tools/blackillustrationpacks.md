@@ -8,4 +8,5 @@ categories:
     - "race"
     - "diversity"
 link: "https://www.blackillustrations.com/black-illustration-packs"
+date: "2020-12-26"
 ---

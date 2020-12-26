@@ -9,4 +9,5 @@ categories:
     - "bias"
     - "algorithms"
 link: "https://www.earwolf.com/episode/technology-and-race-with-ruha-benjamin/"
+date: "2020-12-24"
 ---

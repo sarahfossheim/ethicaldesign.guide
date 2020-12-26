@@ -5,4 +5,5 @@ authors:
 categories: 
     - "white supremacy"
 link: "https://www.meandwhitesupremacybook.com/the-book"
+date: "2020-12-26"
 ---
