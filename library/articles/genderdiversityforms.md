@@ -2,7 +2,6 @@
 title: "Designing forms for gender diversity and inclusion"
 authors:
     - "Sabrina Fonseca"
-type: "article"
 categories: 
     - "inclusive design"
     - "LGBTQIA+"
