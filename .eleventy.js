@@ -10,8 +10,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(xmlFiltersPlugin);
   eleventyConfig.addPlugin(pluginSEO, {
     title: "Ethical Design Guide",
-    description: "TODO",
-    url: "TODO",
+    description: "Tech is always political. The way data is collected and handled is often biased, and many products are neither accessible nor inclusive. Ethical Design Guide is made to share resources on how to create ethical products that don't cause harm.",
+    url: "https://ethicaldesign.guide",
     author: "Sarah L. Fossheim"
   });
   eleventyConfig.addFilter("minify", css => {

@@ -131,6 +131,7 @@
 
 .table-navigation p a:hover {
     border-bottom: 4px solid var(--text-normal);
+    background-color: transparent;
 }
 
 .table-navigation .next {

@@ -9,7 +9,7 @@ Tech is all around us, developing fast, and not going away. Which is why ethics 
 
 Without it, we risk creating products that cause harm, often against people from minoritized groups, who already face a lot of injustice. Think of the predictive policing software that’s biased against Black people, products that reinforce gender stereotypes or exclude non-binary folks, or all the websites that are not accessible.
 
-Ethical Design Guide is made to share resources on how to create ethical products that don't cause harm. More links will be added continuously. Subscribe to the [mailing list]() to receive a monthly update on new resources and interesting new reads.
+Ethical Design Guide is made to share resources on how to create ethical products that don't cause harm. More links will be added continuously. Subscribe to the [mailing list](https://www.getrevue.co/profile/ethicaldesignguide) to receive a monthly update on new resources and interesting new reads.
 
 ## Bugs, improvements, and feature requests
 
