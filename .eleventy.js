@@ -12,7 +12,8 @@ module.exports = function(eleventyConfig) {
     title: "Ethical Design Guide",
     description: "Tech is always political. The way data is collected and handled is often biased, and many products are neither accessible nor inclusive. Ethical Design Guide is made to share resources on how to create ethical products that don't cause harm.",
     url: "https://ethicaldesign.guide",
-    author: "Sarah L. Fossheim"
+    author: "Sarah L. Fossheim",
+    image: "/styles/img/shared.png"
   });
   eleventyConfig.addFilter("minify", css => {
     return new CleanCSS({}).minify(css).styles;
