@@ -37,7 +37,7 @@ link:
 ---
 ```
 
-An optional short description can be added at the end of the file as well. 
+Optionally, a date field can be added here as well. You can also write a short description after the `---` if you like, although this is not currently displayed anywhere in the interface.
 
 In case of the book Weapons of Math Destruction by Cathy O'Neil, the path of our file would be `resources/books/weaponsofmathdestruction.md`, with the following content:
 

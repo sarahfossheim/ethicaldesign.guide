@@ -32,6 +32,6 @@ If you see a resource that shouldn’t be here or want to add one of your own, i
 
 ## About the creator
 
-[Sarah Fossheim](https://fossheim.io/) ([@liatrisbian](https://twitter.com/liatrisbian)) is a multidisciplinary developer and designer focused on creating inclusive and accessible products. They created Ethical Design Guide in October 2020, with the goal of making it easier to create more ethical products.
+[Sarah Fossheim](https://fossheim.io/) ([@liatrisbian](https://twitter.com/liatrisbian)) is a multidisciplinary developer and designer focused on creating inclusive and accessible products. They created Ethical Design Guide in December 2020, with the goal of making it easier to create more ethical products.
 
 It originally started with a Notion document in June 2020, but was moved over to its own self-hosted platform in fall. This allows others to submit resources in a supervised way without allowing trolls to misuse the functionality, by creating a pull request on GitHub.
