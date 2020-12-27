@@ -13,12 +13,12 @@ Ethical Design Guide is made to share resources on how to create ethical product
 
 ## Bugs, improvements, and feature requests
 
-If you find any bugs or have feature requests, you can open an issue on GitHub, and use one of the following labels:
+If you find any bugs or have feature requests, you can open an issue on GitHub, and use one of the following labels in the title:
 
-- **Accessibility**: Accessibility bugs and improvements
-- **Bug**: Something doesn’t seem to be working
-- **Feature**: Requests and suggestions for new features
-- **Improvement**: General design and code improvements
+- **[a11y]**: Accessibility bugs and improvements
+- **[Bug]**: Something doesn’t seem to be working
+- **[Feature]**: Requests and suggestions for new features
+- **[Improvement]**: General design and code improvements
 
 There's only one person working on this project, so more functionality will be added gradually, and accessibility improvements will be prioritized. The following issues are already on the roadmap:
 
