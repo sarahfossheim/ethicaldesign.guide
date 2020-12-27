@@ -15,7 +15,7 @@ We do not accept racism, homophobia, transphobia, ableism, sexism, white suprema
 
 ## Suggesting a resource through GitHub issues
 
-The easiest way to suggest a new resource is by [creating an issue](https://github.com/sarahfossheim/ethicaldesign.guide/issues/new) on GitHub and adding the `resource` label. The title should be the title of the resource, and the description should at least contain a link, and optional context.
+The easiest way to suggest a new resource is by [creating an issue](https://github.com/sarahfossheim/ethicaldesign.guide/issues/new) on GitHub and adding `[resource]` to the start of the title. The title should be the title of the resource, and the description should at least contain a link, and optional context.
 
 ## Alternative: Submitting a resource by creating a pull request
 
@@ -58,8 +58,8 @@ link: https://www.goodreads.com/book/show/28186015-weapons-of-math-destruction?a
 A former Wall Street quant sounds an alarm on the mathematical models that pervade modern life — and threaten to rip apart our social fabric.
 ```
 
-After this is done, you'll need to commit and push your changes, and create a pull request. The title of the pull request should include what change is made _(eg. "Added the book Weapons of Math Destruction")_. If any context is necessary, please include it in the body of the pull request. The pull request should be labeled with `resources`.
+After this is done, you'll need to commit and push your changes, and create a pull request. The title of the pull request should include what change is made _(eg. "Added the book Weapons of Math Destruction")_. If any context is necessary, please include it in the body of the pull request. The pull request should be labeled with `[resource]` in the title.
 
 ## Removing a resource
 
-If you see a resource in the list that you think doesn't belong here, you can use a similar flow as described above to remove its file. In this case, add the reasoning for why it should be removed in the description of the pull request and label it as `removed resource`.
+If you see a resource in the list that you think doesn't belong here, you can use a similar flow as described above to remove its file. In this case, add the reasoning for why it should be removed in the description of the pull request and label it with `[removed resource]`.
