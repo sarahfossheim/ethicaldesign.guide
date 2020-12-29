@@ -171,3 +171,9 @@ footer .info p:nth-child(2n) {
         background-position: 0.25rem 0.25rem, 0 0;
     }
 }
+
+@media screen and (max-width: 900px) {
+    footer .credits {
+        font-size: 0.8rem;
+    }
+}
