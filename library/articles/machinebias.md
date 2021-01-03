@@ -11,6 +11,6 @@ categories:
     - "AI"
     - "racism"
     - "bias"
-link: "https://www.a11yproject.com/checklist/"
+link: "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
 date: "2020-12-26"
 ---
