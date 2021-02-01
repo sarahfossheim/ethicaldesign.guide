@@ -5,7 +5,7 @@ authors:
 categories: 
     - "ethics"
     - "machine learning"
-    - "ai"
+    - "AI"
     - "algorithms"
 link: "https://www.nature.com/articles/s41599-020-0501-9#citeas"
 date: "2021-01-31"

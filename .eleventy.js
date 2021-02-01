@@ -95,6 +95,7 @@ module.exports = function(eleventyConfig) {
           )
           && (
             resource.data.categories.includes("ai")
+              || resource.data.categories.includes("ai")
               || resource.data.categories.includes("artificial intelligence")
               || resource.data.categories.includes("algorithms")
               || resource.data.categories.includes("machine learning")
