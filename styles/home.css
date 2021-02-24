@@ -43,10 +43,8 @@
 .filter-wrapper .filters li a:hover, .filter-wrapper .filters li a:focus {
     background-color: var(--background);
     color: var(--text-normal);
-    border: 2px solid var(--text-normal);
+    box-shadow: 0 0 0 2px var(--text-normal) inset;
     position: relative;
-    left: -2px;
-    margin-right: -4px;    
 }
 
 .filter-wrapper .filters li.active a {
