@@ -85,6 +85,9 @@ module.exports = function(eleventyConfig) {
             resource.data.categories.includes("bias")
               || resource.data.categories.includes("racist")
               || resource.data.categories.includes("race")
+              || resource.data.categories.includes("racism")
+              || resource.data.categories.includes("anti-racism")
+              || resource.data.categories.includes("antiracism")
               || resource.data.categories.includes("transphobia")
               || resource.data.categories.includes("gender")
               || resource.data.categories.includes("queer")
@@ -95,7 +98,7 @@ module.exports = function(eleventyConfig) {
           )
           && (
             resource.data.categories.includes("ai")
-              || resource.data.categories.includes("ai")
+              || resource.data.categories.includes("AI")
               || resource.data.categories.includes("artificial intelligence")
               || resource.data.categories.includes("algorithms")
               || resource.data.categories.includes("machine learning")
