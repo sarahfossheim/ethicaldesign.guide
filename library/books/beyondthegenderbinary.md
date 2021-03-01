@@ -1,4 +1,3 @@
-
 ---
 title: "Beyond the Gender Binary"
 authors:

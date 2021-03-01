@@ -219,6 +219,7 @@ module.exports = function(eleventyConfig) {
     });
     return description;
   });
+
   eleventyConfig.addFilter("getAuthors", content => {
     let authors = "By ";
     content.authors.forEach((author, index) => {
