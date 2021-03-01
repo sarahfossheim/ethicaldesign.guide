@@ -157,6 +157,7 @@ module.exports = function(eleventyConfig) {
         || resource.data.categories.includes("trans")
         || resource.data.categories.includes("transgender")
         || resource.data.categories.includes("non-binary")
+        || resource.data.categories.includes("non-binary issues")
         || resource.data.categories.includes("gender")
         || resource.data.categories.includes("sexuality"));
     }).sort((a, b) => {
@@ -172,6 +173,7 @@ module.exports = function(eleventyConfig) {
         || resource.data.categories.includes("racism")
         || resource.data.categories.includes("white supremacy")
         || resource.data.categories.includes("anti-racism")
+        || resource.data.categories.includes("antiracism")
         || resource.data.categories.includes("anti-racist")
         || resource.data.categories.includes("racial justice")
         || resource.data.categories.includes("racial inequality"));
