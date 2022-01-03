@@ -8,6 +8,6 @@ categories:
     - "inequality"
     - "racism"
     - "bias"
-link: "https://weaponsofmathdestructionbook.com/"
+link: "https://www.penguinrandomhouse.com/books/241363/weapons-of-math-destruction-by-cathy-oneil/"
 date: "2020-12-27"
 ---
