@@ -1,7 +1,7 @@
 ---
 title: "Ethics of AI"
 authors:
-    - "University of Helsinky"
+    - "University of Helsinki"
 categories: 
     - "ethics"
     - "AI"
